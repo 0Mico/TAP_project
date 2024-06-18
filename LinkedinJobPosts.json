@@ -1,224 +1,4 @@
 {
-    "Job_ID": "3921022248",
-    "Title": "C/C++ Developer - Full Remote",
-    "Company_name": "Starfinder Srl",
-    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3707038171",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Turin, Piedmont, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3707035648",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3926970099",
-    "Title": "Junior Developer C/C++",
-    "Company_name": "Direzione Lavoro S.p.A.",
-    "Location": "Rome, Latium, Italy",
-    "Pubblication_date": "2024-05-15",
-    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3707037202",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Sant\u2019Angelo Romano, Latium, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3938994904",
-    "Title": "SOFTWARE DEVELOPPER C, C++",
-    "Company_name": "Synergie Italia",
-    "Location": "Dogliani, Piedmont, Italy",
-    "Pubblication_date": "2024-05-30",
-    "Description": "Synergie Italia Spa, filiale di Alba seleziona per importante aziendaPosizione:SOFTWARE DEVELOPPER C, C++, C# EmbeddedLa risorsa si occuper\u00e0 di:Stabilire i parametri dei nuovi applicativi;Progettare e sviluppare nuovi software che rispondano alle necessit\u00e0 aziendali analizzate in precedenza;Aggiornare i programmi esistenti che necessitano di un upgrade;Sottoporre gli applicativi a test periodici per valutare le loro performance;Correggere eventuali bug emersi durante le fasi di testing;Redigere la reportistica relativa alle nuove modifiche da apportare ai software in uso in azienda.Requisiti:E' richiesta la conoscenza dei linguaggi:CC++C# EmbeddedInoltre e richiesta:Capacit\u00e0 di lavorare in team Possesso di un titolo di studio pertinente alla mansione o aver svolto un corso di programmazioneAltre informazioni: Luogo di lavoro: Dogliani (CN)Si offre contratto di somministrazione con possibilit\u00e0 di assunzione a tempo indeterminato, orario full time, eventuale Livello come da CCNL.Possibilit\u00e0 di smart-workingL'offerta \u00e8 rivolta a candidat\u0259 nel rispetto del Dlgs 198/2006 e dei Dlgs 215/2003 e 216/2003. Le persone interessate sono invitate a leggere l'informativa privacy ex artt. 13 e 14 del Reg. UE 2016/679. Aut. Min. Prot. N. 1207 \u2013 SG del 16/12/2004",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Informatica e servizi"
-}{
-    "Job_ID": "3921022248",
-    "Title": "C/C++ Developer - Full Remote",
-    "Company_name": "Starfinder Srl",
-    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3616150125",
-    "Title": "SVILUPPATORE SOFTWARE C++",
-    "Company_name": "Michael Page",
-    "Location": "Bologna, Emilia-Romagna, Italy",
-    "Pubblication_date": "2023-05-04",
-    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl candidato ideale \u00e8 in possesso dei seguenti requisiti:Laurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
-}{
-    "Job_ID": "3943186631",
-    "Title": "Software Engineer C/C++ - Varese",
-    "Company_name": "Starfinder Srl",
-    "Location": "Varese, Lombardy, Italy",
-    "Pubblication_date": "2024-06-05",
-    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3826853363",
-    "Title": "Software embedded C++",
-    "Company_name": "fortil",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2024-02-09",
-    "Description": "Key Competences: 2/3 years of experience in software development Fluency in Italian and English. Engineering/Computer Science Degree Required Knowledge of C++. QT Framework and QML is a plus Modular application development, MVC and MVVM design patterns; Version control systems like Git, SVN, CVS; Knowledge of REST, SOAP architectures, MQTT protocol; Knowledge of Relational DB (Microsoft SQL Server, MySQL) and Networking. Basic knowledge of C#, .NET framework 3.5 and newer, Knowledge of Windows PresentationFoundation (WPF) library is a plus; Knowledge of USB and COM Peripherals management is a plus;Tasks: Provide support to software design Perform coding rules conformance check Participate to software test and validationWork condition:For the training, 100% in presence activity is mandatory.Then after the first period, 1 day of remote working allowed",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Consulenza e servizi aziendali"
-}{
-    "Job_ID": "3707038171",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Turin, Piedmont, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3707035648",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3926970099",
-    "Title": "Junior Developer C/C++",
-    "Company_name": "Direzione Lavoro S.p.A.",
-    "Location": "Rome, Latium, Italy",
-    "Pubblication_date": "2024-05-15",
-    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3707037202",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Sant\u2019Angelo Romano, Latium, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
-    "Job_ID": "3938994904",
-    "Title": "SOFTWARE DEVELOPPER C, C++",
-    "Company_name": "Synergie Italia",
-    "Location": "Dogliani, Piedmont, Italy",
-    "Pubblication_date": "2024-05-30",
-    "Description": "Synergie Italia Spa, filiale di Alba seleziona per importante aziendaPosizione:SOFTWARE DEVELOPPER C, C++, C# EmbeddedLa risorsa si occuper\u00e0 di:Stabilire i parametri dei nuovi applicativi;Progettare e sviluppare nuovi software che rispondano alle necessit\u00e0 aziendali analizzate in precedenza;Aggiornare i programmi esistenti che necessitano di un upgrade;Sottoporre gli applicativi a test periodici per valutare le loro performance;Correggere eventuali bug emersi durante le fasi di testing;Redigere la reportistica relativa alle nuove modifiche da apportare ai software in uso in azienda.Requisiti:E' richiesta la conoscenza dei linguaggi:CC++C# EmbeddedInoltre e richiesta:Capacit\u00e0 di lavorare in team Possesso di un titolo di studio pertinente alla mansione o aver svolto un corso di programmazioneAltre informazioni: Luogo di lavoro: Dogliani (CN)Si offre contratto di somministrazione con possibilit\u00e0 di assunzione a tempo indeterminato, orario full time, eventuale Livello come da CCNL.Possibilit\u00e0 di smart-workingL'offerta \u00e8 rivolta a candidat\u0259 nel rispetto del Dlgs 198/2006 e dei Dlgs 215/2003 e 216/2003. Le persone interessate sono invitate a leggere l'informativa privacy ex artt. 13 e 14 del Reg. UE 2016/679. Aut. Min. Prot. N. 1207 \u2013 SG del 16/12/2004",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Informatica e servizi"
-}{
-    "Job_ID": "3921022248",
-    "Title": "C/C++ Developer - Full Remote",
-    "Company_name": "Starfinder Srl",
-    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3616150125",
-    "Title": "SVILUPPATORE SOFTWARE C++",
-    "Company_name": "Michael Page",
-    "Location": "Bologna, Emilia-Romagna, Italy",
-    "Pubblication_date": "2023-05-04",
-    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl candidato ideale \u00e8 in possesso dei seguenti requisiti:Laurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
-}{
-    "Job_ID": "3943186631",
-    "Title": "Software Engineer C/C++ - Varese",
-    "Company_name": "Starfinder Srl",
-    "Location": "Varese, Lombardy, Italy",
-    "Pubblication_date": "2024-06-05",
-    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}{
-    "Job_ID": "3826853363",
-    "Title": "Software embedded C++",
-    "Company_name": "fortil",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2024-02-09",
-    "Description": "Key Competences: 2/3 years of experience in software development Fluency in Italian and English. Engineering/Computer Science Degree Required Knowledge of C++. QT Framework and QML is a plus Modular application development, MVC and MVVM design patterns; Version control systems like Git, SVN, CVS; Knowledge of REST, SOAP architectures, MQTT protocol; Knowledge of Relational DB (Microsoft SQL Server, MySQL) and Networking. Basic knowledge of C#, .NET framework 3.5 and newer, Knowledge of Windows PresentationFoundation (WPF) library is a plus; Knowledge of USB and COM Peripherals management is a plus;Tasks: Provide support to software design Perform coding rules conformance check Participate to software test and validationWork condition:For the training, 100% in presence activity is mandatory.Then after the first period, 1 day of remote working allowed",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Consulenza e servizi aziendali"
-}{
-    "Job_ID": "3707040111",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Naples, Campania, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}{
     "Job_ID": "3707038171",
     "Title": "C++ Developer",
     "Company_name": "MindPal",
@@ -241,18 +21,6 @@
     "Contract_type": "A tempo pieno",
     "Area": "Ingegneria e Informatica",
     "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3926970099",
-    "Title": "Junior Developer C/C++",
-    "Company_name": "Direzione Lavoro S.p.A.",
-    "Location": "Rome, Latium, Italy",
-    "Pubblication_date": "2024-05-15",
-    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
 }
 {
     "Job_ID": "3707037202",
@@ -303,18 +71,6 @@
     "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
 }
 {
-    "Job_ID": "3943186631",
-    "Title": "Software Engineer C/C++ - Varese",
-    "Company_name": "Starfinder Srl",
-    "Location": "Varese, Lombardy, Italy",
-    "Pubblication_date": "2024-06-05",
-    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
     "Job_ID": "3826853363",
     "Title": "Software embedded C++",
     "Company_name": "fortil",
@@ -325,230 +81,6 @@
     "Contract_type": "A tempo pieno",
     "Area": "Informatica",
     "Industry_type": "Consulenza e servizi aziendali"
-}
-{
-    "Job_ID": "3707038171",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Turin, Piedmont, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3707035648",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3926970099",
-    "Title": "Junior Developer C/C++",
-    "Company_name": "Direzione Lavoro S.p.A.",
-    "Location": "Rome, Latium, Italy",
-    "Pubblication_date": "2024-05-15",
-    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3707037202",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Sant\u2019Angelo Romano, Latium, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3938994904",
-    "Title": "SOFTWARE DEVELOPPER C, C++",
-    "Company_name": "Synergie Italia",
-    "Location": "Dogliani, Piedmont, Italy",
-    "Pubblication_date": "2024-05-30",
-    "Description": "Synergie Italia Spa, filiale di Alba seleziona per importante aziendaPosizione:SOFTWARE DEVELOPPER C, C++, C# EmbeddedLa risorsa si occuper\u00e0 di:Stabilire i parametri dei nuovi applicativi;Progettare e sviluppare nuovi software che rispondano alle necessit\u00e0 aziendali analizzate in precedenza;Aggiornare i programmi esistenti che necessitano di un upgrade;Sottoporre gli applicativi a test periodici per valutare le loro performance;Correggere eventuali bug emersi durante le fasi di testing;Redigere la reportistica relativa alle nuove modifiche da apportare ai software in uso in azienda.Requisiti:E' richiesta la conoscenza dei linguaggi:CC++C# EmbeddedInoltre e richiesta:Capacit\u00e0 di lavorare in team Possesso di un titolo di studio pertinente alla mansione o aver svolto un corso di programmazioneAltre informazioni: Luogo di lavoro: Dogliani (CN)Si offre contratto di somministrazione con possibilit\u00e0 di assunzione a tempo indeterminato, orario full time, eventuale Livello come da CCNL.Possibilit\u00e0 di smart-workingL'offerta \u00e8 rivolta a candidat\u0259 nel rispetto del Dlgs 198/2006 e dei Dlgs 215/2003 e 216/2003. Le persone interessate sono invitate a leggere l'informativa privacy ex artt. 13 e 14 del Reg. UE 2016/679. Aut. Min. Prot. N. 1207 \u2013 SG del 16/12/2004",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Informatica e servizi"
-}
-{
-    "Job_ID": "3921022248",
-    "Title": "C/C++ Developer - Full Remote",
-    "Company_name": "Starfinder Srl",
-    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3616150125",
-    "Title": "SVILUPPATORE SOFTWARE C++",
-    "Company_name": "Michael Page",
-    "Location": "Bologna, Emilia-Romagna, Italy",
-    "Pubblication_date": "2023-05-04",
-    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl candidato ideale \u00e8 in possesso dei seguenti requisiti:Laurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
-}
-{
-    "Job_ID": "3943186631",
-    "Title": "Software Engineer C/C++ - Varese",
-    "Company_name": "Starfinder Srl",
-    "Location": "Varese, Lombardy, Italy",
-    "Pubblication_date": "2024-06-05",
-    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3826853363",
-    "Title": "Software embedded C++",
-    "Company_name": "fortil",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2024-02-09",
-    "Description": "Key Competences: 2/3 years of experience in software development Fluency in Italian and English. Engineering/Computer Science Degree Required Knowledge of C++. QT Framework and QML is a plus Modular application development, MVC and MVVM design patterns; Version control systems like Git, SVN, CVS; Knowledge of REST, SOAP architectures, MQTT protocol; Knowledge of Relational DB (Microsoft SQL Server, MySQL) and Networking. Basic knowledge of C#, .NET framework 3.5 and newer, Knowledge of Windows PresentationFoundation (WPF) library is a plus; Knowledge of USB and COM Peripherals management is a plus;Tasks: Provide support to software design Perform coding rules conformance check Participate to software test and validationWork condition:For the training, 100% in presence activity is mandatory.Then after the first period, 1 day of remote working allowed",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Consulenza e servizi aziendali"
-}
-{
-    "Job_ID": "3707038171",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Turin, Piedmont, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3707035648",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3926970099",
-    "Title": "Junior Developer C/C++",
-    "Company_name": "Direzione Lavoro S.p.A.",
-    "Location": "Rome, Latium, Italy",
-    "Pubblication_date": "2024-05-15",
-    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3707037202",
-    "Title": "C++ Developer",
-    "Company_name": "MindPal",
-    "Location": "Sant\u2019Angelo Romano, Latium, Italy",
-    "Pubblication_date": "2023-08-29",
-    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
-}
-{
-    "Job_ID": "3938994904",
-    "Title": "SOFTWARE DEVELOPPER C, C++",
-    "Company_name": "Synergie Italia",
-    "Location": "Dogliani, Piedmont, Italy",
-    "Pubblication_date": "2024-05-30",
-    "Description": "Synergie Italia Spa, filiale di Alba seleziona per importante aziendaPosizione:SOFTWARE DEVELOPPER C, C++, C# EmbeddedLa risorsa si occuper\u00e0 di:Stabilire i parametri dei nuovi applicativi;Progettare e sviluppare nuovi software che rispondano alle necessit\u00e0 aziendali analizzate in precedenza;Aggiornare i programmi esistenti che necessitano di un upgrade;Sottoporre gli applicativi a test periodici per valutare le loro performance;Correggere eventuali bug emersi durante le fasi di testing;Redigere la reportistica relativa alle nuove modifiche da apportare ai software in uso in azienda.Requisiti:E' richiesta la conoscenza dei linguaggi:CC++C# EmbeddedInoltre e richiesta:Capacit\u00e0 di lavorare in team Possesso di un titolo di studio pertinente alla mansione o aver svolto un corso di programmazioneAltre informazioni: Luogo di lavoro: Dogliani (CN)Si offre contratto di somministrazione con possibilit\u00e0 di assunzione a tempo indeterminato, orario full time, eventuale Livello come da CCNL.Possibilit\u00e0 di smart-workingL'offerta \u00e8 rivolta a candidat\u0259 nel rispetto del Dlgs 198/2006 e dei Dlgs 215/2003 e 216/2003. Le persone interessate sono invitate a leggere l'informativa privacy ex artt. 13 e 14 del Reg. UE 2016/679. Aut. Min. Prot. N. 1207 \u2013 SG del 16/12/2004",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Informatica e servizi"
-}
-{
-    "Job_ID": "3921022248",
-    "Title": "C/C++ Developer - Full Remote",
-    "Company_name": "Starfinder Srl",
-    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
-    "Experience_level": "Livello medio-alto",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3616150125",
-    "Title": "SVILUPPATORE SOFTWARE C++",
-    "Company_name": "Michael Page",
-    "Location": "Bologna, Emilia-Romagna, Italy",
-    "Pubblication_date": "2023-05-04",
-    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl candidato ideale \u00e8 in possesso dei seguenti requisiti:Laurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
-}
-{
-    "Job_ID": "3943186631",
-    "Title": "Software Engineer C/C++ - Varese",
-    "Company_name": "Starfinder Srl",
-    "Location": "Varese, Lombardy, Italy",
-    "Pubblication_date": "2024-06-05",
-    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
-}
-{
-    "Job_ID": "3826853363",
-    "Title": "Software embedded C++",
-    "Company_name": "fortil",
-    "Location": "Milan, Lombardy, Italy",
-    "Pubblication_date": "2024-02-09",
-    "Description": "Key Competences: 2/3 years of experience in software development Fluency in Italian and English. Engineering/Computer Science Degree Required Knowledge of C++. QT Framework and QML is a plus Modular application development, MVC and MVVM design patterns; Version control systems like Git, SVN, CVS; Knowledge of REST, SOAP architectures, MQTT protocol; Knowledge of Relational DB (Microsoft SQL Server, MySQL) and Networking. Basic knowledge of C#, .NET framework 3.5 and newer, Knowledge of Windows PresentationFoundation (WPF) library is a plus; Knowledge of USB and COM Peripherals management is a plus;Tasks: Provide support to software design Perform coding rules conformance check Participate to software test and validationWork condition:For the training, 100% in presence activity is mandatory.Then after the first period, 1 day of remote working allowed",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Informatica",
-    "Industry_type": "Consulenza e servizi aziendali"
-}
-{
-    "Job_ID": "3921098160",
-    "Title": "C++ SOFTWARE ENGINEER | C++ SOFTWARE DEVELOPER | SVILUPPATORE EMBEDDED C++",
-    "Company_name": "Techyon",
-    "Location": "Imola, Emilia-Romagna, Italy",
-    "Pubblication_date": "2024-05-08",
-    "Description": ""
 }
 {
     "Job_ID": "3707040111",
@@ -556,15 +88,7 @@
     "Company_name": "MindPal",
     "Location": "Naples, Campania, Italy",
     "Pubblication_date": "2023-08-29",
-    "Description": ""
-}
-{
-    "Job_ID": "3931387262",
-    "Title": "Software engineer c/c++",
-    "Company_name": "Page Personnel",
-    "Location": "Genoa, Liguria, Italy",
-    "Pubblication_date": "2024-05-21",
-    "Description": "Azienda nostra cliente ricerca |SW Engineer About Our ClientRealt\u00e0 storica del territorio, leader nella produzione di sistemi e di nuovi prodotti nei settori dell'idraulica, dell'elettronica e della nautica.Job DescriptionIl candidato ideale sar\u00e0 responsabile della progettazione e realizzazione di prodotti innovativi nel settore manifatturiero, con una particolare attenzione ai sistemi embedded. Questa posizione richiede una solida base in ingegneria elettronica, esperienza pratica nella progettazione di sistemi embedded e competenze avanzate nella programmazione.Key ResponsibilitiesProgettazione e sviluppo di sistemi elettronici embedded.Programmazione di microcontrollori e microprocessori utilizzando linguaggi C e C++.Implementazione e gestione di protocolli di comunicazione seriali come Modbus e CANbus.Integrazione di standard per l'automazione degli edifici, tra cui BACnet e KNX.Sviluppo e controllo di motori brushed DC.Collaborazione con team multidisciplinari per la definizione delle specifiche tecniche e la realizzazione dei progetti.Redazione di documentazione tecnica e rapporti di progetto.Assicurare il rispetto delle tempistiche e dei requisiti di qualit\u00e0The Successful ApplicantLaurea magistrale in Ingegneria Elettronica (in subordine, Elettrica).Esperienza comprovata nella progettazione di prodotti per settori manifatturieri.Conoscenza avanzata della programmazione di sistemi embedded in C e C++.Esperienza con protocolli di comunicazione seriali Modbus e CANbus.Familiarit\u00e0 con gli standard per il building automation BACnet e KNX.Esperienza nel pilotaggio di motori brushed DC.Buona conoscenza della lingua inglese, sia scritta che parlata.What's on OfferOpportunit\u00e0 di crescita professionale in un'azienda solida e strutturataAmbiente di lavoro stimolante e collaborativo.Formazione continua e aggiornamento professionale.Assunzione diretta in azienda tempo indeterminatoContact: Chiara Maria LaisoQuote job ref: JN-052024-6428790Brand: PP",
+    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
     "Experience_level": "Esperienza minima",
     "Contract_type": "A tempo pieno",
     "Area": "Ingegneria e Informatica",
@@ -576,11 +100,7 @@
     "Company_name": "fortil",
     "Location": "Milan, Lombardy, Italy",
     "Pubblication_date": "2024-03-06",
-    "Description": "Fortil is an engineering group and technology consulting, a model designed by entrepreneurial engineers. Working with Fortil means working with an ambitious and expert community, driven by accuracy, challenge and emulation.Today, more than 2,000 of us work every day to make Fortil the largest independent engineering company in Europe. Our ambition is to contribute to build a more responsible, communal and inclusive world for our employees and clients.We are looking for a software developer to join our team!YOUR PROFILE:Knowledge of:  C/C++/python/bash programming languages Build toolchains: make Operating system: Linux, Windows Versioning system: GITNICE TO HAVE: good networking experience (management of switches, firewalls and system network configurations) good IT experience (account management, access, centralized updates and system backup) good experience in managing large amounts of data (design/management of databases in which to collect images)",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Consulenza e servizi aziendali"
+    "Description": ""
 }
 {
     "Job_ID": "3939678044",
@@ -595,28 +115,16 @@
     "Industry_type": "Informatica e servizi"
 }
 {
-    "Job_ID": "3935695742",
-    "Title": "Software engineer c/c++",
-    "Company_name": "Michael Page",
-    "Location": "Genoa, Liguria, Italy",
-    "Pubblication_date": "2024-05-27",
-    "Description": "Azienda nostra cliente ricerca |SW Engineer About Our ClientRealt\u00e0 storica del territorio, leader nella produzione di sistemi e di nuovi prodotti nei settori dell'idraulica, dell'elettronica e della nautica.Job DescriptionIl candidato ideale sar\u00e0 responsabile della progettazione e realizzazione di prodotti innovativi nel settore manifatturiero, con una particolare attenzione ai sistemi embedded. Questa posizione richiede una solida base in ingegneria elettronica, esperienza pratica nella progettazione di sistemi embedded e competenze avanzate nella programmazione.Key Responsibilities:Progettazione e sviluppo di sistemi elettronici embedded.Programmazione di microcontrollori e microprocessori utilizzando linguaggi C e C++.Implementazione e gestione di protocolli di comunicazione seriali come Modbus e CANbus.Integrazione di standard per l'automazione degli edifici, tra cui BACnet e KNX.Sviluppo e controllo di motori brushed DC.Collaborazione con team multidisciplinari per la definizione delle specifiche tecniche e la realizzazione dei progetti.Redazione di documentazione tecnica e rapporti di progetto.Assicurare il rispetto delle tempistiche e dei requisiti di qualit\u00e0The Successful ApplicantLaurea magistrale in Ingegneria Elettronica (in subordine, Elettrica).Esperienza comprovata nella progettazione di prodotti per settori manifatturieri.Conoscenza avanzata della programmazione di sistemi embedded in C e C++.Esperienza con protocolli di comunicazione seriali Modbus e CANbus.Familiarit\u00e0 con gli standard per il building automation BACnet e KNX.Esperienza nel pilotaggio di motori brushed DC.Buona conoscenza della lingua inglese, sia scritta che parlata.What's on OfferOpportunit\u00e0 di crescita professionale in un'azienda solida e strutturataAmbiente di lavoro stimolante e collaborativo.Formazione continua e aggiornamento professionale.Assunzione diretta in azienda tempo indeterminatoContact: Chiara Maria LaisoQuote job ref: JN-052024-6428790",
+    "Job_ID": "3921025033",
+    "Title": "C/C++ Developer - Trieste",
+    "Company_name": "Starfinder Srl",
+    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
+    "Pubblication_date": "2024-05-08",
+    "Description": "Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer. Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha circa 2 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (2+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in smartwork dopo un primo periodo di formazione iniziale in azienda.",
     "Experience_level": "Esperienza minima",
     "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Fabbricazione di apparecchi elettrici, materiali elettrici e componenti elettronici, Fabbricazione di macchinari industriali e Industria manifatturiera"
-}
-{
-    "Job_ID": "3868729595",
-    "Title": "SVILUPPATORE SOFTWARE C++",
-    "Company_name": "Page Personnel",
-    "Location": "Bologna, Emilia-Romagna, Italy",
-    "Pubblication_date": "2024-03-23",
-    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl Candidato Ideale \u00e8 In Possesso Dei Seguenti RequisitiLaurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620Brand: PP",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Selezione e ricerca di personale"
+    "Area": "Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
 }
 {
     "Job_ID": "3707038171",
@@ -684,7 +192,11 @@
     "Company_name": "Starfinder Srl",
     "Location": "Trieste, Friuli-Venezia Giulia, Italy",
     "Pubblication_date": "2024-05-08",
-    "Description": ""
+    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
+    "Experience_level": "Livello medio-alto",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
 }
 {
     "Job_ID": "3616150125",
@@ -747,12 +259,168 @@
     "Industry_type": "Selezione e ricerca di personale"
 }
 {
-    "Job_ID": "3931387262",
-    "Title": "Software engineer c/c++",
+    "Job_ID": "3848863607",
+    "Title": "Software developer C/C++",
+    "Company_name": "fortil",
+    "Location": "Milan, Lombardy, Italy",
+    "Pubblication_date": "2024-03-06",
+    "Description": "Fortil is an engineering group and technology consulting, a model designed by entrepreneurial engineers. Working with Fortil means working with an ambitious and expert community, driven by accuracy, challenge and emulation.Today, more than 2,000 of us work every day to make Fortil the largest independent engineering company in Europe. Our ambition is to contribute to build a more responsible, communal and inclusive world for our employees and clients.We are looking for a software developer to join our team!YOUR PROFILE:Knowledge of:  C/C++/python/bash programming languages Build toolchains: make Operating system: Linux, Windows Versioning system: GITNICE TO HAVE: good networking experience (management of switches, firewalls and system network configurations) good IT experience (account management, access, centralized updates and system backup) good experience in managing large amounts of data (design/management of databases in which to collect images)",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Consulenza e servizi aziendali"
+}
+{
+    "Job_ID": "3939678044",
+    "Title": "Sviluppatore C++ - Aerospace & Defence",
+    "Company_name": "Brain Technologies",
+    "Location": "Rome, Latium, Italy",
+    "Pubblication_date": "2024-05-31",
+    "Description": "brain Technologies \u00e8 una societ\u00e0 Italiana di Ingegneria che nasce a Torino nel 2008 da un gruppo di persone appassionate di tecnologia e innovazione.Siamo attivamente coinvolti nei progetti delle pi\u00f9 rappresentative realt\u00e0 industriali nazionali ed internazionali in materia di Sistemi Embedded, Sistemi di Controllo Avanzati, Progettazione Hardware, Sviluppo di Prodotti Innovativi e Sistemi Meccatronici.Coniughiamo ogni giorno la creativit\u00e0 e le competenze del nostro Team con le tecnologie pi\u00f9 avanzate in un processo di evoluzione continuo.Brain Technologies \u00e8 composta da Persone che, tramite la loro sinergia, hanno l\u2019obbiettivo di raggiungere missioni sfidanti; siamo convinti che la soddisfazione delle persone e le relazioni umane siano la chiave della crescita.Facciamo del nostro lavoro la nostra passione quotidiana.www.brain-tech.itPosizione:Brain Technologies \u00e8 alla ricerca di un:Sviluppatore Software C++ per sviluppo di soluzioni Software in ambito Radar prevalentemente in linguaggio C/C++.La risorsa, all\u2019interno del gruppo di Sviluppo Software, sar\u00e0 impegnato/a in attivit\u00e0 di progettazione e sviluppo Software dalle fasi iniziali di Analisi/Definizione delle Specifiche fino all'implementazione, documentazione, test e consegna della soluzione finale.Luogo di lavoro: RomaRequisiti:Capacit\u00e0 di lavorare in contesti multidisciplinare e multiprogettoProcessi di Software EngineeringForti capacit\u00e0 di sviluppo in C++Conoscenza di ambienti di produzione LinuxConoscenza della libreria QT (Skills addizionali)Conoscenza del mondo Embedded e sviluppo Firmware (Skills addizionali)Titolo di Studio: Laurea in materie STEM (in Ingegneria Elettronica, Informatica etc)Disponibilit\u00e0 a trasferte in ambito nazionale e internazionaleRequisiti linguistici Inglese: ProfessionaleCosa ti offriamo:Un contratto di inserimento commisurato e coerente al tuo profiloResponsabilit\u00e0 e crescitaAmbiente flessibile e dinamicoStruttura organizzativa orizzontaleAmbiente internazionaleMensa AziendaleWelfareAssicurazione sanitariaAltre informazioni:Ti chiediamo di inviare il cv con fotografia in formato Word e solo se in possesso dei requisiti richiesti.brain Technologies \u00e8 un\u2019Azienda che crede nelle pari opportunit\u00e0 e le decisioni in merito alle nuove assunzioni si basano solo su merito, qualifiche, abilit\u00e0 e rendimento nei colloqui. La scelta dei candidati che superano le selezioni vengono fatte indipendentemente da religione, paese d\u2019origine o etnia, sesso, orientamento sessuale, identit\u00e0 o espressione di genere, et\u00e0 o disabilit\u00e0. Brain Technologies si impegna a creare un ambiente di lavoro inclusivo, diversificato e sicuro. (Leggi 903/77; 125/91; dei decreti legislativi 215/03 e 216/03)",
+    "Experience_level": "Non applicabile",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria",
+    "Industry_type": "Informatica e servizi"
+}
+{
+    "Job_ID": "3868729595",
+    "Title": "SVILUPPATORE SOFTWARE C++",
     "Company_name": "Page Personnel",
-    "Location": "Genoa, Liguria, Italy",
-    "Pubblication_date": "2024-05-21",
-    "Description": "Azienda nostra cliente ricerca |SW Engineer About Our ClientRealt\u00e0 storica del territorio, leader nella produzione di sistemi e di nuovi prodotti nei settori dell'idraulica, dell'elettronica e della nautica.Job DescriptionIl candidato ideale sar\u00e0 responsabile della progettazione e realizzazione di prodotti innovativi nel settore manifatturiero, con una particolare attenzione ai sistemi embedded. Questa posizione richiede una solida base in ingegneria elettronica, esperienza pratica nella progettazione di sistemi embedded e competenze avanzate nella programmazione.Key ResponsibilitiesProgettazione e sviluppo di sistemi elettronici embedded.Programmazione di microcontrollori e microprocessori utilizzando linguaggi C e C++.Implementazione e gestione di protocolli di comunicazione seriali come Modbus e CANbus.Integrazione di standard per l'automazione degli edifici, tra cui BACnet e KNX.Sviluppo e controllo di motori brushed DC.Collaborazione con team multidisciplinari per la definizione delle specifiche tecniche e la realizzazione dei progetti.Redazione di documentazione tecnica e rapporti di progetto.Assicurare il rispetto delle tempistiche e dei requisiti di qualit\u00e0The Successful ApplicantLaurea magistrale in Ingegneria Elettronica (in subordine, Elettrica).Esperienza comprovata nella progettazione di prodotti per settori manifatturieri.Conoscenza avanzata della programmazione di sistemi embedded in C e C++.Esperienza con protocolli di comunicazione seriali Modbus e CANbus.Familiarit\u00e0 con gli standard per il building automation BACnet e KNX.Esperienza nel pilotaggio di motori brushed DC.Buona conoscenza della lingua inglese, sia scritta che parlata.What's on OfferOpportunit\u00e0 di crescita professionale in un'azienda solida e strutturataAmbiente di lavoro stimolante e collaborativo.Formazione continua e aggiornamento professionale.Assunzione diretta in azienda tempo indeterminatoContact: Chiara Maria LaisoQuote job ref: JN-052024-6428790Brand: PP",
+    "Location": "Bologna, Emilia-Romagna, Italy",
+    "Pubblication_date": "2024-03-23",
+    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl Candidato Ideale \u00e8 In Possesso Dei Seguenti RequisitiLaurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620Brand: PP",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Selezione e ricerca di personale"
+}
+{
+    "Job_ID": "3921025033",
+    "Title": "C/C++ Developer - Trieste",
+    "Company_name": "Starfinder Srl",
+    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
+    "Pubblication_date": "2024-05-08",
+    "Description": "Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer. Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha circa 2 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (2+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in smartwork dopo un primo periodo di formazione iniziale in azienda.",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
+}
+{
+    "Job_ID": "3707038171",
+    "Title": "C++ Developer",
+    "Company_name": "MindPal",
+    "Location": "Turin, Piedmont, Italy",
+    "Pubblication_date": "2023-08-29",
+    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Selezione e ricerca di personale"
+}
+{
+    "Job_ID": "3707035648",
+    "Title": "C++ Developer",
+    "Company_name": "MindPal",
+    "Location": "Milan, Lombardy, Italy",
+    "Pubblication_date": "2023-08-29",
+    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Selezione e ricerca di personale"
+}
+{
+    "Job_ID": "3926970099",
+    "Title": "Junior Developer C/C++",
+    "Company_name": "Direzione Lavoro S.p.A.",
+    "Location": "Rome, Latium, Italy",
+    "Pubblication_date": "2024-05-15",
+    "Description": "Direzione Lavoro Group S.p.A. (Aut. Min. 0001 del 21/1/2019) Divisone IT ricerca per nostro cliente, attiva nel mercato italiano con una consolidata esperienza nei settori della Difesa, dei Trasporti, dello Spazio e della Cybersecurity.. Ricerchiamo UN/UNA Junior C/C++ Developer - Ambito DifesaSeniority RichiestaSiamo alla ricerca di candidati neolaureati in Ingegneria Informatica /Informatica o esperienza nel ruolo.Principali Mansioni e Responsabilit\u00e0 Progettazione, Sviluppo, Integrazione di componenti Software in linguaggio C/C++; Analisi e Supporto all'aggiornamento della documentazione di progetto.Competenze TecnicheEsperienza di programmazione in C++;Skill Richiesti Capacit\u00e0 di autonomia, predisposizione al lavoro in team, problem solving, analisi del dominio di applicazione; Buona conoscenza della Lingua Inglese; Disponibilit\u00e0 a brevi trasferte in Italia o all'Estero, secondo le esigenze di progetto.Sede di Lavoro : Roma ( Tiburtina)Se interessato, inviaci il tuo curriculum e sar\u00e0 nostra premura valutare la tua candidatura.Il presente annuncio \u00e8 rivolto ad entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le et\u00e0 e tutte le nazionalit\u00e0, ai sensi dei decreti legislativi 215/03 e 216/03. Gli interessati possono inviare il CV con l'autorizzazione al trattamento dei dati personali secondo il D. Lgs. 196/03 e il Regolamento UE n. 2016/679Settore: InformaticaRuolo: IT/TechnologyTipo di occupazione: Contratto a tempo indeterminatoInquadramento: Primo impiego",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
+}
+{
+    "Job_ID": "3707037202",
+    "Title": "C++ Developer",
+    "Company_name": "MindPal",
+    "Location": "Sant\u2019Angelo Romano, Latium, Italy",
+    "Pubblication_date": "2023-08-29",
+    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Selezione e ricerca di personale"
+}
+{
+    "Job_ID": "3938994904",
+    "Title": "SOFTWARE DEVELOPPER C, C++",
+    "Company_name": "Synergie Italia",
+    "Location": "Dogliani, Piedmont, Italy",
+    "Pubblication_date": "2024-05-30",
+    "Description": "Synergie Italia Spa, filiale di Alba seleziona per importante aziendaPosizione:SOFTWARE DEVELOPPER C, C++, C# EmbeddedLa risorsa si occuper\u00e0 di:Stabilire i parametri dei nuovi applicativi;Progettare e sviluppare nuovi software che rispondano alle necessit\u00e0 aziendali analizzate in precedenza;Aggiornare i programmi esistenti che necessitano di un upgrade;Sottoporre gli applicativi a test periodici per valutare le loro performance;Correggere eventuali bug emersi durante le fasi di testing;Redigere la reportistica relativa alle nuove modifiche da apportare ai software in uso in azienda.Requisiti:E' richiesta la conoscenza dei linguaggi:CC++C# EmbeddedInoltre e richiesta:Capacit\u00e0 di lavorare in team Possesso di un titolo di studio pertinente alla mansione o aver svolto un corso di programmazioneAltre informazioni: Luogo di lavoro: Dogliani (CN)Si offre contratto di somministrazione con possibilit\u00e0 di assunzione a tempo indeterminato, orario full time, eventuale Livello come da CCNL.Possibilit\u00e0 di smart-workingL'offerta \u00e8 rivolta a candidat\u0259 nel rispetto del Dlgs 198/2006 e dei Dlgs 215/2003 e 216/2003. Le persone interessate sono invitate a leggere l'informativa privacy ex artt. 13 e 14 del Reg. UE 2016/679. Aut. Min. Prot. N. 1207 \u2013 SG del 16/12/2004",
+    "Experience_level": "Livello medio-alto",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Informatica e servizi"
+}
+{
+    "Job_ID": "3921022248",
+    "Title": "C/C++ Developer - Full Remote",
+    "Company_name": "Starfinder Srl",
+    "Location": "Trieste, Friuli-Venezia Giulia, Italy",
+    "Pubblication_date": "2024-05-08",
+    "Description": "Questa \u00e8 una posizione remota.Per azienda operante nel settore della consulenza sui sistemi informativi ricerchiamo un  C/C++ Developer con esperienza . Il candidato si occuper\u00e0 di sviluppo e di ottimizzazione di progetti software principalmente sviluppati in C o C++. In particolar modo, oltre ad attivit\u00e0 di refactoring del codice al fine di ottimizzarlo, si occuper\u00e0 anche di modificare o sviluppare algoritmi per soddisfare le esigenze e le prestazioni dei clienti, nonch\u00e9 di ideare e sviluppare pipeline di calcolo.Il candidato ideale ha almeno 4/5 anni di esperienza nel ruolo e possiede i seguenti requisiti:Laurea in discipline scientifico tecnologiche o esperienza lavorativa equivalente Comprovata esperienza in C/C++ (4+ anni di esperienza) Conoscenza della programmazione parallela (thread POSIX/STD) Conoscenza di base della programmazione su GPU (CUDA) Conoscenza dei sistemi di controllo di versione (Git) Conoscenza fluente dell'italiano e molto buona della lingua inglese sia scritta che parlata (almeno livello da B2 in su) Impegno a rispettare le scadenze e i risultati Disponibilit\u00e0 a occasionali trasferte Saranno considerati elementi preferenziali i candidati che hanno anche conoscenza di Python, Fortran, Docker, Podman, Singularity, Kubernetes.Possibilit\u00e0 di lavoro in full remote.",
+    "Experience_level": "Livello medio-alto",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
+}
+{
+    "Job_ID": "3616150125",
+    "Title": "SVILUPPATORE SOFTWARE C++",
+    "Company_name": "Michael Page",
+    "Location": "Bologna, Emilia-Romagna, Italy",
+    "Pubblication_date": "2023-05-04",
+    "Description": "Azienda industriale con prodotto elettronico/software in campo ferroviario|Sviluppatore Software C++About Our ClientIl nostro Cliente \u00e8 Azienda industriale di medio dimensionamento con core business la progettazione, produzione e commercializzazione di una soluzione tecnologica proprietaria con forte integrazione di elettronica e software nel campo ferroviario.Job DescriptionLa figura ricercata verr\u00e0 inserita all'interno dell'ufficio Software, gi\u00e0 composto da 11 risorse tra Software, Firmware, Network design e V&V e si occuper\u00e0 di progettazione Software in ambiente Linux.The Successful ApplicantIl candidato ideale \u00e8 in possesso dei seguenti requisiti:Laurea in Ingegneria Informatica/Elettronica/Telecomunicazioni;Conoscenza e utilizzo di C e C++;Conoscenza e utilizzo di linguaggi di scripting e Python;Conoscenza e passione per S.O. GNU/Linux;Indipendenza ed autonomia nello svolgere i task assegnati.What's on OfferContesto tecnico sfidante;Lavoro in team;Possibilit\u00e0 di crescita nella gestione di progetti e coordinamento di persone.Contact: Emanuel ShametiQuote job ref: JN-022022-5245620",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Ingegneria e Informatica",
+    "Industry_type": "Servizi IT e consulenza IT, Sviluppo di software e Sicurezza informatica e delle reti"
+}
+{
+    "Job_ID": "3943186631",
+    "Title": "Software Engineer C/C++ - Varese",
+    "Company_name": "Starfinder Srl",
+    "Location": "Varese, Lombardy, Italy",
+    "Pubblication_date": "2024-06-05",
+    "Description": "Starfinder, agenzia di selezione del personale dedicata esclusivamente al settore ICT, ricerca un Software Developer per importante e prestigioso Gruppo operante nel settore ICT con sede a Varese.In particolare il candidato sar\u00e0 impegnato sullo sviluppo di sistemi e software avionici e si occuper\u00e0 principalmente delle seguenti attivit\u00e0:Studio e analisi requisiti di sistema Gestione requisiti SW Sviluppo e manutenzione SW per sistema avionico Integrazione con altri apparati SW\\HW Interazione con il team di Test e Validazione Ricerchiamo candidati senza esperienza lavorativa oppure con un'esperienza compresa tra 1e 4 anni che hanno sviluppato, ciascuno secondo la propria seniority, le seguenti caratteristiche:Laurea triennale o magistrale in Informatica, Ingegneria Informatica, Aerospaziale Conoscenza approfondita del linguaggio programmazione C\\C++ Familiarit\u00e0 con il framework .NET Buona padronanza dei principali applicativi software d'ufficio (Microsoft Word, Excel ed Access) La conoscenza di Unix sar\u00e0 considerate un plus Buona conoscenza della lingua inglese Flessibilit\u00e0 e attitudine al problem solving e spiccata attitudine al lavoro in team Prevista possibilit\u00e0 di smartwork anche se in misura limitata vsta la natura dell'attivit\u00e0 richiesta e comunque da definire nei tempi e nei modi con l'azienda. Possibilit\u00e0 di sperimentarsi in ambiente internazionale e dinamico, con ottime prospettive di crescita professionale.Diversi i benefit riconosciuti quali: assicurazione sanitaria integrativa, Ticket Restaurant, Welfare, scontistiche come dipendenti del Gruppo.",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Servizi IT e consulenza IT"
+}
+{
+    "Job_ID": "3826853363",
+    "Title": "Software embedded C++",
+    "Company_name": "fortil",
+    "Location": "Milan, Lombardy, Italy",
+    "Pubblication_date": "2024-02-09",
+    "Description": "Key Competences: 2/3 years of experience in software development Fluency in Italian and English. Engineering/Computer Science Degree Required Knowledge of C++. QT Framework and QML is a plus Modular application development, MVC and MVVM design patterns; Version control systems like Git, SVN, CVS; Knowledge of REST, SOAP architectures, MQTT protocol; Knowledge of Relational DB (Microsoft SQL Server, MySQL) and Networking. Basic knowledge of C#, .NET framework 3.5 and newer, Knowledge of Windows PresentationFoundation (WPF) library is a plus; Knowledge of USB and COM Peripherals management is a plus;Tasks: Provide support to software design Perform coding rules conformance check Participate to software test and validationWork condition:For the training, 100% in presence activity is mandatory.Then after the first period, 1 day of remote working allowed",
+    "Experience_level": "Esperienza minima",
+    "Contract_type": "A tempo pieno",
+    "Area": "Informatica",
+    "Industry_type": "Consulenza e servizi aziendali"
+}
+{
+    "Job_ID": "3707040111",
+    "Title": "C++ Developer",
+    "Company_name": "MindPal",
+    "Location": "Naples, Campania, Italy",
+    "Pubblication_date": "2023-08-29",
+    "Description": "We are looking for C++ DeveloperResponsibilitiesThe duties of C++ Developer will include designing and implementing software solutions using C++, including designing and implementing algorithms, data structures, and programming interfaces. The programmer will also be responsible for testing and debugging code, as well as maintaining and developing existing software.RequirementsExperience in programming in C++ languageKnowledge of design patterns and good programming practicesAbility to work in a team and communicate effectivelyEnglish language proficiency enabling smooth communicationNice To HaveImplementation of beacon signal detection functionalityExperience in programming in other object-oriented languages, such as Java or C#Knowledge of version control systems, such as GitKnowledge of libraries and frameworks, such as Boost or STLKnowledge of operating systems, such as Linux or WindowsWe OfferB2B contract typeFull-time jobRemote and flexible working hours",
     "Experience_level": "Esperienza minima",
     "Contract_type": "A tempo pieno",
     "Area": "Ingegneria e Informatica",
@@ -781,30 +449,6 @@
     "Contract_type": "A tempo pieno",
     "Area": "Ingegneria",
     "Industry_type": "Informatica e servizi"
-}
-{
-    "Job_ID": "3935695742",
-    "Title": "Software engineer c/c++",
-    "Company_name": "Michael Page",
-    "Location": "Genoa, Liguria, Italy",
-    "Pubblication_date": "2024-05-27",
-    "Description": "Azienda nostra cliente ricerca |SW Engineer About Our ClientRealt\u00e0 storica del territorio, leader nella produzione di sistemi e di nuovi prodotti nei settori dell'idraulica, dell'elettronica e della nautica.Job DescriptionIl candidato ideale sar\u00e0 responsabile della progettazione e realizzazione di prodotti innovativi nel settore manifatturiero, con una particolare attenzione ai sistemi embedded. Questa posizione richiede una solida base in ingegneria elettronica, esperienza pratica nella progettazione di sistemi embedded e competenze avanzate nella programmazione.Key Responsibilities:Progettazione e sviluppo di sistemi elettronici embedded.Programmazione di microcontrollori e microprocessori utilizzando linguaggi C e C++.Implementazione e gestione di protocolli di comunicazione seriali come Modbus e CANbus.Integrazione di standard per l'automazione degli edifici, tra cui BACnet e KNX.Sviluppo e controllo di motori brushed DC.Collaborazione con team multidisciplinari per la definizione delle specifiche tecniche e la realizzazione dei progetti.Redazione di documentazione tecnica e rapporti di progetto.Assicurare il rispetto delle tempistiche e dei requisiti di qualit\u00e0The Successful ApplicantLaurea magistrale in Ingegneria Elettronica (in subordine, Elettrica).Esperienza comprovata nella progettazione di prodotti per settori manifatturieri.Conoscenza avanzata della programmazione di sistemi embedded in C e C++.Esperienza con protocolli di comunicazione seriali Modbus e CANbus.Familiarit\u00e0 con gli standard per il building automation BACnet e KNX.Esperienza nel pilotaggio di motori brushed DC.Buona conoscenza della lingua inglese, sia scritta che parlata.What's on OfferOpportunit\u00e0 di crescita professionale in un'azienda solida e strutturataAmbiente di lavoro stimolante e collaborativo.Formazione continua e aggiornamento professionale.Assunzione diretta in azienda tempo indeterminatoContact: Chiara Maria LaisoQuote job ref: JN-052024-6428790",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Fabbricazione di apparecchi elettrici, materiali elettrici e componenti elettronici, Fabbricazione di macchinari industriali e Industria manifatturiera"
-}
-{
-    "Job_ID": "3948178854",
-    "Title": "SOFTWARE EMBEDDED DEVELOPER C AUTOMOTIVE",
-    "Company_name": "Skytechnology SRL",
-    "Location": "Nichelino, Piedmont, Italy",
-    "Pubblication_date": "2024-06-12",
-    "Description": "Stiamo cercando un laureato in ingegneria elettronica, meccatronica o informatica da inserire all\u2019interno dei nostri progetti.Requisiti:Conoscenza del C in ambito embeddedEsperienza su programmazione microcontrolloriConoscenze delle reti LIN e CANConoscenza dei principali protocolli di comunicazione (UART, SPI, I2C, \u2026)Fondamenti di elettronica ed elettrotecnicaUtilizzo strumenti di laboratorio (alimentatori, oscilloscopi, etc..)Conoscenza di GIT Buona conoscenza lingua inglese e italiana (scritto e parlato)Opzionali, ma preferenziali:Conoscenza delle regole MISRAConoscenza base tecniche di functional safety (ISO26262)Sede: Nichelino (TO) con 2 giorni smart working",
-    "Experience_level": "Esperienza minima",
-    "Contract_type": "A tempo pieno",
-    "Area": "Ingegneria e Informatica",
-    "Industry_type": "Servizi IT e consulenza IT"
 }
 {
     "Job_ID": "3868729595",

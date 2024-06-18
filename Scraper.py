@@ -63,10 +63,7 @@ def _extractJobDescriptionFronHTML(web_page: BeautifulSoup):
         description = tag.get_text().strip()
         if description:
             return description
-        else:
-            return ''
-    else:
-        return ''
+    return ''
 
 # Extract expereince_level, contract_type, area and industry_type
 def _extractExperienceLevelFromHTML(web_page: BeautifulSoup):
@@ -94,7 +91,7 @@ def scrapeJobs(url):
 
         url = _extractJobLinkFromHTML(card)
         print(url)
-        time.sleep(10)
+        time.sleep(3)
         response = _makeHTTPRequest(url)
         soup = BeautifulSoup(response, "html.parser")
         """ with open("job_page.html", "w") as f:
@@ -103,10 +100,14 @@ def scrapeJobs(url):
         infos = _extractExperienceLevelFromHTML(soup)
         print(infos)
         if infos:
-            job['Experience_level'] = infos[0] if infos[0] else ''
-            job['Contract_type'] = infos[1] if infos[1] else ''
-            job['Area'] = infos[2] if infos[2] else ''
-            job['Industry_type'] = infos[3] if infos[3] else ''
+            if infos[0]: 
+                job['Experience_level'] = infos[0]
+                if infos[1]: 
+                    job['Contract_type'] = infos[1]
+                    if infos[2]: 
+                        job['Area'] = infos[2]
+                        if infos[3]: 
+                            job['Industry_type'] = infos[3]
         
         jobs.append(job)
         
