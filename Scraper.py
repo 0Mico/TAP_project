@@ -3,6 +3,7 @@ import json
 import time
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+import urllib.parse
 
 # Make an http get request to the url. Returns the response content
 def _makeHTTPRequest(url: str):
@@ -12,8 +13,6 @@ def _makeHTTPRequest(url: str):
 # Elaborate the response using BeautifulSoup's html parser
 def _organizeResponse(response: str):
     soup = BeautifulSoup(response, "html.parser")
-    """ with open("output.html", "w") as f:
-        f.write(soup.prettify()) """
     return soup
 
 # Extract the list of job cards in the given web page    
@@ -24,97 +23,146 @@ def _extractJobCardsFromHTML(web_page: BeautifulSoup):
 # Extract the job_id from the card received
 def _extactJobIDFromHTML(job_card: Tag):
     job_id = job_card.get("data-entity-urn").split(":")[3]
-    return job_id
+    if job_id: return job_id
+    else: return ''
 
 # Use css selectors to extract the job title from the card received
 def _extractTitleFromHTML(job_card: Tag):
     tag = job_card.select_one("a span")
-    title = tag.get_text().strip()
-    return title
+    if tag:
+        title = tag.get_text().strip()
+        if title: return title
+    else: return ''
 
 # Extract the company name from the card received
 def _extractCompanyNameFromHTML(job_card: Tag):
     tag = job_card.select_one("h4 a")
-    company_name = tag.get_text().strip()
-    return company_name
+    if tag:
+        company_name = tag.get_text().strip()
+        if company_name: return company_name
+    else: return ''
 
 # Extract the location of the job from the card received
 def _extractJobLocationFromHTML(job_card: Tag):
     tag = job_card.select_one("span.job-search-card__location")
-    location = tag.get_text().strip()
-    return location
+    if tag:
+        location = tag.get_text().strip()
+        if location: return location
+    else: return ''
 
 # Extract the pubblication date of the job post
 def _extractPubblicationDateFromHTML(job_card: Tag):
     tag = job_card.select_one("time")
-    date = tag.get("datetime")
-    return date
+    if tag:
+        date = tag.get('datetime')
+        if date: return date
+    else: return ''
 
 # Extract the link to go to the job page
-def _extractJobLinkFromHTML(job_card: Tag):
-    tag = job_card.select_one("a.base-card__full-link")
-    url = tag.get("href")
-    return url
+def _goToJobPage(base_url: str, job_id: str):
+    url = base_url + job_id
+    response = _makeHTTPRequest(url)
+    return response
 
 # Extract the job description to retrieve then skills required
 def _extractJobDescriptionFronHTML(web_page: BeautifulSoup):
     tag = web_page.select_one("div.show-more-less-html__markup")
     if tag:
         description = tag.get_text().strip()
-        if description:
-            return description
-    return ''
+        if description: return description
+    else: return ''
 
-# Extract expereince_level, contract_type, area and industry_type
-def _extractExperienceLevelFromHTML(web_page: BeautifulSoup):
-    span_tags = web_page.select("span.description__job-criteria-text")
-    infos = []
-    if span_tags:
-        for tag in span_tags:
-            infos.append(tag.get_text().strip())
-    return infos
+# Extract experience_level required for a job
+def _extractSeniorityLevelfromHTML(web_page: BeautifulSoup):
+    tag = web_page.select_one("ul li:nth-child(1) span")
+    if tag:
+        seniority = tag.get_text().strip()
+        if seniority: return seniority
+    else: return ''
+
+# Extract the contract type for a job
+def _extractEmploymentTypeFromHTML(web_page: BeautifulSoup):
+    tag = web_page.select_one("ul li:nth-child(2) span")
+    if tag:
+        type = tag.get_text().strip()
+        if type: return type
+    else: return ''
+
+# Extract job_function for a job
+def _extractJobFunctionFromHTML(web_page: BeautifulSoup):
+    tag = web_page.select_one("ul li:nth-child(3) span")
+    if tag:
+        func = tag.get_text().strip()
+        if func: return func
+    else: return ''
+
+# Extract indusrty type of the company that publiched a job post
+def _extractIndustryTypeFromHTML(web_page: BeautifulSoup):
+    tag = web_page.select_one("ul li:nth-child(4) span")
+    if tag:
+        type = tag.get_text().strip()
+        if type: return type
+    else: return ''
+
+# Update the url with the number of job_posting already scraped
+def _modifyUrl(url: str, new_start: int):
+    parsed_url = urllib.parse.urlparse(url)
+    query_params = urllib.parse.parse_qs(parsed_url.query)
+    query_params['start'] = [str(new_start)]
+    new_query_string = urllib.parse.urlencode(query_params, doseq=True)
+    new_url = parsed_url._replace(query=new_query_string).geturl()
+    return new_url
+
+# Create a JSON object for each job_card received
+def _createJobObject(job_card: Tag):
+    job = {}
+    job['Job_ID'] = _extactJobIDFromHTML(job_card)
+    job['Title'] = _extractTitleFromHTML(job_card)
+    job['Company_name'] = _extractCompanyNameFromHTML(job_card)
+    job['Location'] = _extractJobLocationFromHTML(job_card)
+    job['Pubblication_date'] = _extractPubblicationDateFromHTML(job_card)
+
+    response = _goToJobPage(job_link, job['Job_ID'])
+    soup = _organizeResponse(response)
+ 
+    job['Description'] = _extractJobDescriptionFronHTML(soup)
+    job['Seniority_level'] = _extractSeniorityLevelfromHTML(soup)
+    job['Employment_type'] = _extractEmploymentTypeFromHTML(soup)
+    job['Job_Function'] = _extractJobFunctionFromHTML(soup)
+    job['Industry_type'] = _extractIndustryTypeFromHTML(soup)
+    return job
 
 # Make a json object for each job scraped and write it into a json file   
-def scrapeJobs(url):
+def scrapeJobs(url: str, post_scraped: int):
+    print(url) 
     response = _makeHTTPRequest(url)
     soup =_organizeResponse(response)
     job_cards = _extractJobCardsFromHTML(soup)
-    jobs = []
-
+    jobs_retrieved = len(job_cards)
+    
     for card in job_cards:
-        job = {}
-        job['Job_ID'] = _extactJobIDFromHTML(card)
-        job['Title'] = _extractTitleFromHTML(card)
-        job['Company_name'] = _extractCompanyNameFromHTML(card)
-        job['Location'] = _extractJobLocationFromHTML(card)
-        job['Pubblication_date'] = _extractPubblicationDateFromHTML(card)
-
-        url = _extractJobLinkFromHTML(card)
-        print(url)
-        time.sleep(3)
-        response = _makeHTTPRequest(url)
-        soup = BeautifulSoup(response, "html.parser")
-        """ with open("job_page.html", "w") as f:
-            f.write(soup.prettify()) """   
-        job['Description'] = _extractJobDescriptionFronHTML(soup)
-        infos = _extractExperienceLevelFromHTML(soup)
-        print(infos)
-        if infos:
-            if infos[0]: 
-                job['Experience_level'] = infos[0]
-                if infos[1]: 
-                    job['Contract_type'] = infos[1]
-                    if infos[2]: 
-                        job['Area'] = infos[2]
-                        if infos[3]: 
-                            job['Industry_type'] = infos[3]
-        
-        jobs.append(job)
+        job = _createJobObject(card)       
         
         with open("LinkedinJobPosts.json", "a") as file:
             json.dump(job, file, indent=4)
             file.write('\n')
-   
-url = "https://www.linkedin.com/jobs/search/?geoId=103350119&keywords=C++"
-scrapeJobs(url)
 
+    if jobs_retrieved > 0:
+        post_scraped += jobs_retrieved
+        new_url = _modifyUrl(url, post_scraped)
+        
+        #To not make the server reset the connection due to too much reqeusts in the unit of time
+        time.sleep(1)
+
+        scrapeJobs(new_url, post_scraped)
+
+keywords = ['Data+Analyst', 'Data+Scientist', 'Cloud+Engineer', 'Devops', 'Frontend+Developer', 'Backend+Developer', 
+            'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence']
+
+job_link = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
+
+for k in keywords:
+    keyword = k
+    start_url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={k}&geoId=103350119&start=0"
+    post_scraped = 0
+    scrapeJobs(start_url, post_scraped)
