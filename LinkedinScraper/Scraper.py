@@ -65,11 +65,16 @@ def _goToJobPage(base_url: str, job_id: str):
     return response
 
 # Extract the job description to retrieve then skills required
+# Extract text recursively from the "container tag" that contains the entire description
 def _extractJobDescriptionFronHTML(web_page: BeautifulSoup):
     tag = web_page.select_one("div.show-more-less-html__markup")
     if tag:
         description = tag.get_text().strip()
-        if description: return description
+        if description == "":
+            print("searching in child tags")
+            for child in tag.descendants:
+                description = description.join(child.get_text().strip())
+        return description
     else: return ''
 
 # Extract experience_level required for a job
@@ -132,13 +137,11 @@ def _createJobObject(job_card: Tag):
     job['Industry_type'] = _extractIndustryTypeFromHTML(soup)
     return job
 
-# Send the job to the fluentd container
+# Send the job to the logstash container
 def send_to_logstash(job):
     url = 'http://logstash:5000/'
     headers = {'Content-Type': 'application/json'}
-    response = requests.post(url, json=job, headers=headers)
-    #print(f'Sent job {job}, status code: {response.status_code}')
-
+    requests.post(url, json=job, headers=headers)
 
 # Make a json object for each job scraped and write it into a json file   
 def scrapeJobs(url: str, post_scraped: int):
@@ -161,13 +164,14 @@ def scrapeJobs(url: str, post_scraped: int):
         post_scraped += jobs_retrieved
         new_url = _modifyUrl(url, post_scraped)
         
-        #To not make the server reset the connection due to too much reqeusts in the unit of time
+        #To not make the server reset the connection due to too much requests in the unit of time
         time.sleep(1)
 
         scrapeJobs(new_url, post_scraped)
 
 keywords = ['Data+Analyst', 'Data+Scientist', 'Cloud+Engineer', 'Devops', 'Frontend+Developer', 'Backend+Developer', 
-            'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence']
+            'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence',
+            'Python+Developer']
 
 job_link = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
 

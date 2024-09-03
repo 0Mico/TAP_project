@@ -1,7 +1,7 @@
 path.config: /usr/share/logstash/pipeline
 
-http.host: "0.0.0.0"  
-http.port: 9600        # Default port for the HTTP API
+api.http.host: "0.0.0.0"  
+api.http.port: 9600        # Default port for the HTTP API
 
 xpack.monitoring.enabled: true
 xpack.monitoring.elasticsearch.hosts: ["http://elasticsearch:9200"]
