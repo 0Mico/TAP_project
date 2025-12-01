@@ -1,22 +1,50 @@
+from hmac import new
 import requests
 import json
 import time
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 import urllib.parse
+import random
 
 # Make an http get request to the url. Returns the response content
-def _makeHTTPRequest(url: str):
-    response = requests.get(url)
-    return response.text
+def _makeHTTPRequest(url: str, max_retries: int = 5):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+    }
+
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(url, headers=headers)
+            if response.status_code == 429:
+                wait_time = (2 ** attempt) * 5 + random.uniform(0, 5)  # Exponential backoff
+                print(f"Rate limited (429). Waiting {wait_time:.1f} seconds before retry {attempt + 1}/{max_retries}...")
+                time.sleep(wait_time)
+                continue
+            response.raise_for_status() # Raise error for a 500 status (the script would treat it as a success without this line)
+            return response.text
+        except requests.exceptions.Timeout:
+            print(f"Timeout on attempt {attempt + 1}/{max_retries}")
+            if attempt < max_retries - 1:
+                time.sleep(5)
+        except requests.exceptions.RequestException as e:
+            print(f"Request error on attempt {attempt + 1}/{max_retries}: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(5)
+    print(f"Failed to fetch {url} after {max_retries} attempts")
+    return None
 
 # Elaborate the response using BeautifulSoup's html parser
 def _organizeResponse(response: str):
+    if response is None:
+        return None
     soup = BeautifulSoup(response, "html.parser")
     return soup
 
 # Extract the list of job cards in the given web page    
 def _extractJobCardsFromHTML(web_page: BeautifulSoup):
+    if web_page is None:
+        return []
     job_cards = web_page.select("li div.base-card")
     return job_cards
 
@@ -139,44 +167,63 @@ def _createJobObject(job_card: Tag):
 
 # Send the job to the logstash container
 def send_to_logstash(job):
-    url = 'http://logstash:5000/'
-    headers = {'Content-Type': 'application/json'}
-    requests.post(url, json=job, headers=headers)
+    try:
+        url = 'http://logstash:5000/'
+        headers = {'Content-Type': 'application/json'}
+        requests.post(url, json=job, headers=headers)
+    except Exception as e:
+        print(f"Error sending job to logstash: {e}")
 
 # Make a json object for each job scraped and write it into a json file   
-def scrapeJobs(url: str, post_scraped: int):
-    print(url) 
-    response = _makeHTTPRequest(url)
-    soup =_organizeResponse(response)
-    job_cards = _extractJobCardsFromHTML(soup)
-    jobs_retrieved = len(job_cards)
-    
-    for card in job_cards:
-        job = _createJobObject(card)
+def scrapeJobs(url: str):
+    post_scraped = 0
+    while True:
+        print(url) 
+        response = _makeHTTPRequest(url)
+        if response is None:
+            print("Failed to retrieve data, stopping scrape.")
+            break
 
-        send_to_logstash(job)
+        soup =_organizeResponse(response)
+        if soup is None:
+            print("Failed to parse data, stopping scrape.")
+            break
+
+        job_cards = _extractJobCardsFromHTML(soup)
+        jobs_retrieved = len(job_cards)
+        if jobs_retrieved == 0:
+            print("No more jobs to scrape, stopping scrape for this keyword.")
+            break
         
-        '''with open("LinkedinJobPosts.json", "a") as file:
-            json.dump(job, file, indent=4)
-            file.write('\n')'''
+        for card in job_cards:
+            job = _createJobObject(card)
 
-    if jobs_retrieved > 0:
+            print(json.dumps(job, indent=4))
+
+            send_to_logstash(job)
+            
+            '''with open("LinkedinJobPosts.json", "a") as file:
+                json.dump(job, file, indent=4)
+                file.write('\n')'''
+
         post_scraped += jobs_retrieved
         new_url = _modifyUrl(url, post_scraped)
-        
+        url = new_url
+            
         #To not make the server reset the connection due to too much requests in the unit of time
-        time.sleep(1)
+        time.sleep(random.uniform(2, 4))
 
-        scrapeJobs(new_url, post_scraped)
 
-keywords = ['Data+Analyst', 'Data+Scientist', 'Cloud+Engineer', 'Devops', 'Frontend+Developer', 'Backend+Developer', 
+if __name__ == "__main__":
+    keywords = ['Data+Analyst', 'Data+Scientist', 'Cloud+Engineer', 'Devops', 'Frontend+Developer', 'Backend+Developer', 
             'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence',
             'Python+Developer']
 
-job_link = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
-
-for k in keywords:
-    keyword = k
-    start_url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={k}&geoId=103350119&start=0"
-    post_scraped = 0
-    scrapeJobs(start_url, post_scraped)
+    job_link = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
+    for k in keywords:
+        start_url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={k}&geoId=103350119&start=0"
+        try:
+            scrapeJobs(start_url)  
+        except Exception as e:
+            print(f"Fatal error scraping {k}: {e}")
+            continue

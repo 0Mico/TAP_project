@@ -10,13 +10,13 @@ __pycache__/
 *$py.class
 *.so
 
-# Model files (optional - these can be large)
-skill_extractor_model/
+# Model files
+skill_extractor_model*/
 *.bin
 *.pt
 
 # Data files
-job_posts/
+job-posts/
 *.json
 
 # IDE
@@ -31,3 +31,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Others
+Ideas.txt
