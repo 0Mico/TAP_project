@@ -6,6 +6,7 @@ from pyspark.sql.types import (
     StructType, StructField, StringType, ArrayType
 )
 from transformers import AutoTokenizer, AutoModelForTokenClassification
+import shutil
 
 
 class SkillsExtractor:
@@ -38,7 +39,6 @@ class SkillsExtractor:
 
         if not text or not text.strip():
             return []
-        
         try:
             model, tokenizer, id2label = cls.get_model()
             
@@ -101,25 +101,21 @@ class SkillsExtractor:
         except Exception as e:
             print(f"Error extracting skills: {e}")
             return []
-
+    
 
 def create_spark_session():
-    """Create and configure Spark session"""
-
     spark = SparkSession \
         .builder \
         .appName("JobPostSkillsExtractor") \
         .config("spark.sql.streaming.checkpointLocation", "/tmp/spark-checkpoint") \
         .getOrCreate()
     
-    # Reduce logging verbosity
-    spark.sparkContext.setLogLevel("WARN")
-    
     return spark
 
 
 def get_kafka_schema():
     """ Define schema for incoming Kafka messages"""
+
     return StructType([
         StructField("Job_ID", StringType(), False),
         StructField("Title", StringType(), False),
@@ -139,6 +135,10 @@ def main():
     print("JOB POST SKILLS EXTRACTOR - SPARK STREAMING")
     print("="*60)
     
+    if os.path.exists("/tmp/spark-checkpoint"):
+        print("⚠️ DELETING CHECKPOINT at /tmp/spark-checkpoint to force re-processing...")
+        shutil.rmtree("/tmp/spark-checkpoint")
+    
     # Get configuration from environment variables
     kafka_bootstrap_servers = os.environ.get("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
     elasticsearch_host = os.environ.get("ELASTICSEARCH_HOST", "elasticsearch")
@@ -151,7 +151,6 @@ def main():
     print(f"  Elasticsearch Index: job_posts_with_skills")
     print("="*60 + "\n")
     
-    # Create Spark session
     spark = create_spark_session()
     
     # Register UDF for skill extraction
@@ -159,8 +158,7 @@ def main():
     
     # Read from Kafka as a streaming DataFrame
     print("Connecting to Kafka...")
-    kafka_df = spark \
-        .readStream \
+    kafka_df = spark.readStream \
         .format("kafka") \
         .option("kafka.bootstrap.servers", kafka_bootstrap_servers) \
         .option("subscribe", "deduped_job_posts") \
@@ -184,8 +182,7 @@ def main():
         .drop("Description")
     
     # Write to Elasticsearch
-    query = enriched_df \
-        .writeStream \
+    query = enriched_df.writeStream \
         .outputMode("append") \
         .format("org.elasticsearch.spark.sql") \
         .option("es.nodes", elasticsearch_host) \

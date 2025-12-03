@@ -10,12 +10,8 @@ class JobSkillsExtractor:
     """Extract skills from job descriptions using fine-tuned model"""
     
     def __init__(self, model_path: str = "./skill_extractor_model"):
-        """
-        Initialize the skill extractor
-        
-        Args:
-            model_path: Path to the fine-tuned model directory
-        """
+        """ Initialize the skill extractor """
+
         print(f"Loading model from {model_path}...")
         self.model = AutoModelForTokenClassification.from_pretrained(model_path)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -27,15 +23,6 @@ class JobSkillsExtractor:
         print(f"Labels: {list(self.id2label.values())}\n")
     
     def extract_skills(self, text: str) -> List[str]:
-        """
-        Extract skills from a text description
-        
-        Args:
-            text: Job description text
-            
-        Returns:
-            List of extracted skills
-        """
         if not text or not text.strip():
             return []
         
@@ -97,15 +84,6 @@ class JobSkillsExtractor:
         return list(skills)
     
     def _reconstruct_word(self, tokens: List[str]) -> str:
-        """
-        Reconstruct a word from BERT tokens
-        
-        Args:
-            tokens: List of BERT tokens (may include ## for subwords)
-            
-        Returns:
-            Reconstructed word/phrase
-        """
         if not tokens:
             return ""
                
@@ -113,16 +91,6 @@ class JobSkillsExtractor:
 
     
     def process_job_post(self, job_post: Dict) -> Dict:
-        """
-        Process a single job post and extract skills
-        
-        Args:
-            job_post: Dictionary with job post data
-            
-        Returns:
-            New dictionary with skills instead of description
-        """
-        # Create a copy of the job post
         result = job_post.copy()
         
         # Extract skills from description
@@ -209,7 +177,7 @@ def main():
     print("="*60 + "\n")
     
     # Initialize extractor
-    extractor = JobSkillsExtractor(model_path="./skill_extractor_model_942")
+    extractor = JobSkillsExtractor(model_path="./skill_extractor_model")
     
     # Process JSON file
     input_file = "Test-extraction.json"  # Change to your input file

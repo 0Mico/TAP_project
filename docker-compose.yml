@@ -16,6 +16,8 @@ services:
     container_name: logstash
     hostname: logstash
     build: ./Logstash
+    environment:
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"  
     ports:
       - "5000:5000"
     depends_on:
@@ -23,9 +25,6 @@ services:
         condition: service_healthy
       kafka:
         condition: service_healthy
-    links:
-      - elasticsearch
-      - kafka      
     healthcheck: # Used to make the scraper sent data to logstash only if logstash is correctly listening
       test: ["CMD-SHELL", "curl -f http://localhost:5000 || exit 1"]
       interval: 3s
@@ -50,6 +49,7 @@ services:
       KAFKA_LOG_DIRS: /var/lib/kafka/data
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LOG_RETENTION_BYTES: 2147483648  # 2GB
     volumes:
       - kafka-data:/var/lib/kafka/data
     ports:
@@ -76,31 +76,27 @@ services:
     image: provectuslabs/kafka-ui:latest
     container_name: kafka-ui
     hostname: kafka-ui
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_PROPERTIES_SECURITY_PROTOCOL: PLAINTEXT
     ports:
       - '8080:8080'
     depends_on:
       kafka:
         condition: service_healthy
-    environment:
-      KAFKA_CLUSTERS_0_NAME: local
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
-      KAFKA_CLUSTERS_0_PROPERTIES_SECURITY_PROTOCOL: PLAINTEXT
 
 
 
   spark-master:
-    image: bitnami/spark:3.5.0
+    image: apache/spark-py:v3.4.0
     container_name: spark-master
     hostname: spark-master
-    environment:
-      - SPARK_MODE=master
-      - SPARK_MASTER_HOST=spark-master
-      - SPARK_MASTER_PORT=7077
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
+    user: root
     ports:
       - "8081:8080"  # Spark Master Web UI
       - "7077:7077"  # Spark Master port
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080"]
       interval: 10s
@@ -108,24 +104,33 @@ services:
       retries: 5
 
   spark-worker:
-    image: bitnami/spark:3.5.0
+    build:
+      context: ./Spark
+      dockerfile: Dockerfile.worker
     container_name: spark-worker
     hostname: spark-worker
+    user: root
     environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark-master:7077
-      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_MEMORY=4G
       - SPARK_WORKER_CORES=2
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
     depends_on:
       spark-master:
         condition: service_healthy
+    volumes:
+      - ./Spark/skill_extractor_model:/app/model:ro
 
   spark-app:
-    build: ./Spark
+    build:
+      context: ./Spark
+      dockerfile: Dockerfile.app
     container_name: spark-app
     hostname: spark-app
+    environment:
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
     depends_on:
       spark-master:
         condition: service_healthy
@@ -133,13 +138,8 @@ services:
         condition: service_healthy
       elasticsearch:
         condition: service_healthy
-    environment:
-      - SPARK_MASTER_URL=spark://spark-master:7077
-      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
-      - ELASTICSEARCH_HOST=elasticsearch
-      - ELASTICSEARCH_PORT=9200
     volumes:
-      - ./skill_extractor_model:/app/model:ro  # Mount your model directory as read-only
+      - ./Spark/skill_extractor_model:/app/model:ro  # Mount your model directory as read-only
 
 
 
@@ -147,12 +147,12 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
     container_name: elasticsearch
     hostname: elasticsearch
-    ports:
-      - 9200:9200
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
-      - ES_JAVA_OPTS=-Xms1g -Xmx1g  # Limit to 1GB RAM
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - 9200:9200
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
     healthcheck:
@@ -168,7 +168,7 @@ services:
       elasticsearch:
         condition: service_healthy
     volumes:
-      - ./init-elasticsearch.sh:/init-elasticsearch.sh:ro
+      - ./elasticsearch/create_indexes.sh:/init-elasticsearch.sh:ro
     command: sh /init-elasticsearch.sh
 
 
@@ -177,10 +177,10 @@ services:
     image: kibana:8.15.0
     container_name: kibana
     hostname: kibana
-    ports:
-      - 5601:5601
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
     depends_on:
       elasticsearch:
         condition: service_healthy
