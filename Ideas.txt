@@ -1,7 +1,0 @@
-Avere alla fine record del tipo: "Azienda, Location, Impiego, Descrizione".
-
-Estrarre dalla descrizione le skills richieste addestrando/usando AI.
-
-Sarà possibile vedere quali sono le skills più richieste per un determinato impiego e anche quali sono gli impieghi più cercati da ogni azienda.
-
-Location serve per fare una cartina geografica su kibana.
