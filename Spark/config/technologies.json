@@ -1,0 +1,74 @@
+{
+  "cloud_providers": [
+    "aws", "gcp", "azure", "ibm", "oracle"
+  ],
+  "programming_languages": [
+    "python", "java", "javascript", "typescript", "c#", "c++", "c",
+    "go", "rust", "ruby", "php", "swift", "kotlin", "scala",
+    "r", "matlab", "perl", "visual basic", "objective-c",
+    "dart", "elixir", "haskell", "lua", "groovy", "cobol",
+    "fortran", "assembly", "sql", "bash", "powershell", "shell"
+  ],
+  "frontend_frameworks": [
+    "react", "angular", "vue.js", "svelte", "next.js",
+    "nuxt.js", "gatsby", "ember.js", "backbone.js", "jquery",
+    "preact", "solid.js", "alpine.js", "htmx", "lit",
+    "react native", "flutter", "ionic", "xamarin",
+    "swift ui", "swiftui", "jetpack compose",
+    "tailwind", "bootstrap", "material ui", "quasar",
+    "sass", "less", "styled-components", "css modules"
+  ],
+  "backend_frameworks": [
+    "django", "flask", "fastapi", "spring framework", "spring boot",
+    "express.js", "nest.js", "asp.net", ".net", ".net framework",
+    "laravel", "symfony", "ruby on rails", "rails",
+    "gin", "echo", "fiber", "actix", "rocket",
+    "phoenix", "play framework", "grails", "struts",
+    "ktor", "micronaut", "quarkus", "dropwizard"
+  ],
+  "databases": [
+    "postgresql", "mysql", "sql server", "oracle", "mariadb",
+    "sqlite", "cockroachdb", "timescaledb", "yugabytedb",
+    "mongodb", "redis", "cassandra", "couchbase", "couchdb",
+    "dynamodb", "aurora db", "rds", "cosmos db", "neo4j",
+    "arangodb", "influxdb", "elasticsearch", "memcached", "riak"
+  ],
+  "devops_tools": [
+    "docker", "kubernetes", "terraform", "ansible",
+    "puppet", "chef", "vagrant", "packer", "consul",
+    "vault", "nomad", "helm", "kustomize", "argocd",
+    "flux", "jenkins", "circleci", "travis ci", "bamboo",
+    "teamcity", "octopus deploy", "spinnaker"
+  ],
+  "monitoring_tools": [
+    "prometheus", "grafana", "datadog", "new relic", "splunk",
+    "logstash", "kibana", "jaeger", "zipkin", "elk",
+    "sentry", "pagerduty", "opsgenie", "cloudwatch",
+    "azure monitor", "application insights", "dynatrace",
+    "appdynamics", "elastic apm"
+  ],
+  "data_science_libraries": [
+    "pandas", "numpy", "scipy", "scikit-learn", "sklearn",
+    "tensorflow", "pytorch", "keras", "xgboost", "lightgbm",
+    "catboost", "statsmodels", "seaborn", "matplotlib",
+    "plotly", "bokeh", "jupyter", "jupyter notebook",
+    "spacy", "nltk", "gensim", "transformers", "hugging face",
+    "opencv", "pillow", "scrapy", "beautiful soup"
+  ],
+  "bi_tools": [
+    "power bi", "power query", "power apps", "power automate",
+    "power pages", "power virtual agents", "dax",
+    "data analysis expressions", "power pivot", "powerpivot",
+    "power view", "powerview", "m language", "tableau",
+    "qlik", "qlik sense", "qlikview", "qlik view",
+    "looker", "google analytics", "business object",
+    "sap analytics cloud", "sap lumira", "sap webi", "crystal reports"
+  ],
+  "testing_frameworks": [
+    "pytest", "unittest", "jest", "mocha", "jasmine",
+    "junit", "testng", "selenium", "cypress", "playwright",
+    "puppeteer", "cucumber", "rspec", "phpunit",
+    "karma", "protractor", "enzyme", "react testing library",
+    "vitest", "testing library"
+  ]
+}

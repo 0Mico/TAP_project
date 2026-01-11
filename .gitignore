@@ -17,7 +17,8 @@ skill_extractor_model*/
 
 # Data files
 job-posts/
-*.json
+LinkedinJobPosts.json
+Skills.json
 
 # IDE
 .vscode/

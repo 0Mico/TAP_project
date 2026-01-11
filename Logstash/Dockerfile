@@ -1,4 +1,4 @@
-FROM logstash:8.15.0
+FROM logstash:9.1.9
 
 RUN logstash-plugin install logstash-filter-elasticsearch \
     && logstash-plugin install logstash-output-elasticsearch

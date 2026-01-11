@@ -404,7 +404,7 @@ def main():
     
     # Step 1: Prepare dataset
     preparator = DatasetPreparator(json_dir="./job-posts")
-    train_dataset, val_dataset = preparator.create_datasets(test_size=0.1, random_seed=8)
+    train_dataset, val_dataset = preparator.create_datasets(test_size=0.2, random_seed=43)
     
     # Step 2: Train model
     trainer = SkillExtractorTrainer()
@@ -414,7 +414,7 @@ def main():
         output_dir="./skill_extractor_model",
         num_epochs=15,        # Good for small dataset (200 samples)
         batch_size=8,        # Adjust based on your GPU memory
-        learning_rate=2e-5,  # Conservative for fine-tuning
+        learning_rate=3e-5,  # Conservative for fine-tuning
         warmup_ratio=0.1
     )
 

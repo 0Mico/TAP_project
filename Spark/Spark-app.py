@@ -8,6 +8,8 @@ from pyspark.sql.types import (
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 import shutil
 
+from SkillsNormalizer import SkillNormalizer
+from SkillsCategorizer import SkillCategorizer
 
 class SkillsExtractor:
     """Class to load the model only once per executor for efficiency"""
@@ -19,6 +21,7 @@ class SkillsExtractor:
     @classmethod
     def get_model(cls):
         """Load model once per executor and reuse it"""
+
         if cls._model is None:
             model_path = "/app/model"
             print(f"Loading model from {model_path}...")
@@ -33,12 +36,19 @@ class SkillsExtractor:
         
         return cls._model, cls._tokenizer, cls._id2label
     
+
     @classmethod
     def extract_skills(cls, text):
         """ Extract skills from job description text using BIO tagging """
 
         if not text or not text.strip():
-            return []
+            print('RECEIVED EMPTY TEXT')
+            return {
+                'raw_skills': [],
+                'categories': SkillCategorizer._get_empty_categories(),
+                'cloud_services': SkillCategorizer._get_empty_cloud_services()
+            }
+        
         try:
             model, tokenizer, id2label = cls.get_model()
             
@@ -51,10 +61,8 @@ class SkillsExtractor:
                 padding=False
             )
             
-            # Predict
             with torch.no_grad():
                 outputs = model(**inputs)
-            
             predictions = torch.argmax(outputs.logits, dim=2)
             
             # Get tokens and labels
@@ -96,11 +104,23 @@ class SkillsExtractor:
                 if skill_text:
                     skills.add(skill_text)
             
-            return list(skills)
+            raw_skills = list(skills)
+            normalized_skills = SkillNormalizer.normalize_skills_list(raw_skills)
+            final_skills = SkillCategorizer.categorize_skills(normalized_skills)
+            
+            return final_skills
         
         except Exception as e:
-            print(f"Error extracting skills: {e}")
-            return []
+            import traceback
+            error_msg = f"Error extracting skills: {str(e)}\n{traceback.format_exc()}"
+            with open('/tmp/spark_errors.log', 'a') as f:
+                f.write(error_msg + '\n')
+            
+            return {
+                'raw_skills': [],
+                'categories': SkillCategorizer._get_empty_categories(),
+                'cloud_services': SkillCategorizer._get_empty_cloud_services()
+            }
     
 
 def create_spark_session():
@@ -108,14 +128,23 @@ def create_spark_session():
         .builder \
         .appName("JobPostSkillsExtractor") \
         .config("spark.sql.streaming.checkpointLocation", "/tmp/spark-checkpoint") \
-        .getOrCreate()
-    
+        .getOrCreate() 
     return spark
+
+
+"""def connect_to_kafka(spark, kafka_bootstrap_servers):
+    kafka_df = spark.readStream \
+        .format("kafka") \
+        .option("kafka.bootstrap.servers", kafka_bootstrap_servers) \
+        .option("subscribe", "deduped_job_posts") \
+        .option("startingOffsets", "earliest") \
+        .option("failOnDataLoss", "false") \
+        .load()
+    return kafka_df"""
 
 
 def get_kafka_schema():
     """ Define schema for incoming Kafka messages"""
-
     return StructType([
         StructField("Job_ID", StringType(), False),
         StructField("Title", StringType(), False),
@@ -129,6 +158,48 @@ def get_kafka_schema():
         StructField("Industry_type", StringType(), False)
     ])
 
+def get_skills_schema():
+    """ Defines the Spark StructType that matches the dictionary returned by SkillCategorizer """
+    return StructType([
+        StructField("raw_skills", ArrayType(StringType()), True),
+        
+        StructField("categories", StructType([
+            StructField("cloud_providers", ArrayType(StringType()), True),
+            StructField("programming_languages", ArrayType(StringType()), True),
+            StructField("frontend_frameworks", ArrayType(StringType()), True),
+            StructField("backend_frameworks", ArrayType(StringType()), True),
+            StructField("databases", ArrayType(StringType()), True),
+            StructField("devops_tools", ArrayType(StringType()), True),
+            StructField("monitoring_tools", ArrayType(StringType()), True),
+            StructField("data_science_libraries", ArrayType(StringType()), True),
+            StructField("bi_tools", ArrayType(StringType()), True),
+            StructField("testing_frameworks", ArrayType(StringType()), True)
+        ]), True),
+        
+        StructField("cloud_services", StructType([
+            StructField("aws", ArrayType(StringType()), True),
+            StructField("gcp", ArrayType(StringType()), True),
+            StructField("azure", ArrayType(StringType()), True),
+            StructField("ibm", ArrayType(StringType()), True),
+            StructField("oracle", ArrayType(StringType()), True)
+        ]), True)
+    ])
+
+"""def write_to_elasticsearch(enriched_df, host, port):
+    query = enriched_df.writeStream \
+        .outputMode("append") \
+        .format("org.elasticsearch.spark.sql") \
+        .option("es.nodes", host) \
+        .option("es.port", port) \
+        .option("es.resource", "job_posts_with_skills") \
+        .option("es.mapping.id", "Job_ID") \
+        .option("es.write.operation", "upsert") \
+        .option("es.nodes.wan.only", "true") \
+        .option("checkpointLocation", "/tmp/spark-checkpoint") \
+        .start()
+    return query"""
+
+
 
 def main():
     print("="*60)
@@ -139,7 +210,6 @@ def main():
         print("⚠️ DELETING CHECKPOINT at /tmp/spark-checkpoint to force re-processing...")
         shutil.rmtree("/tmp/spark-checkpoint")
     
-    # Get configuration from environment variables
     kafka_bootstrap_servers = os.environ.get("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
     elasticsearch_host = os.environ.get("ELASTICSEARCH_HOST", "elasticsearch")
     elasticsearch_port = os.environ.get("ELASTICSEARCH_PORT", "9200")
@@ -154,9 +224,10 @@ def main():
     spark = create_spark_session()
     
     # Register UDF for skill extraction
-    extract_skills_udf = udf(SkillsExtractor.extract_skills, ArrayType(StringType()))
+    final_skills_format = get_skills_schema()
+    extract_skills_udf = udf(SkillsExtractor.extract_skills, final_skills_format)
     
-    # Read from Kafka as a streaming DataFrame
+    # Read from Kafka
     print("Connecting to Kafka...")
     kafka_df = spark.readStream \
         .format("kafka") \
@@ -165,15 +236,15 @@ def main():
         .option("startingOffsets", "earliest") \
         .option("failOnDataLoss", "false") \
         .load()
-    
+    #kafka_df = connect_to_kafka(spark, kafka_bootstrap_servers)
     print("✓ Connected to Kafka\n")
     
     # Parse JSON from Kafka messages
-    schema = get_kafka_schema()
+    kafka_messages_schema = get_kafka_schema()
     
     print("Processing job posts...")
     parsed_df = kafka_df \
-        .select(from_json(col("value").cast("string"), schema).alias("data")) \
+        .select(from_json(col("value").cast("string"), kafka_messages_schema).alias("data")) \
         .select("data.*")
     
     # Extract skills from description, then drop the description
@@ -181,9 +252,8 @@ def main():
         .withColumn("Skills", extract_skills_udf(col("Description"))) \
         .drop("Description")
     
-    # Write to Elasticsearch
+    #query = write_to_elasticsearch(enriched_df, elasticsearch_host, elasticsearch_port)
     query = enriched_df.writeStream \
-        .outputMode("append") \
         .format("org.elasticsearch.spark.sql") \
         .option("es.nodes", elasticsearch_host) \
         .option("es.port", elasticsearch_port) \
@@ -200,6 +270,7 @@ def main():
     
     # Wait for termination
     query.awaitTermination()
+
 
 
 if __name__ == "__main__":

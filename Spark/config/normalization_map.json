@@ -1,0 +1,197 @@
+{
+  "node": "node.js",
+  "nodejs": "node.js",
+  "node js": "node.js",
+  "node-js": "node.js",
+  "node. js": "node.js",
+  
+  "reactjs": "react",
+  "react js": "react",
+  "react.js": "react",
+  "react-js": "react",
+  
+  "vue": "vue.js",
+  "vuejs": "vue.js",
+  "vue js": "vue.js",
+  "vue-js": "vue.js",
+
+  "next": "next.js",
+  "nextjs": "next.js",
+  "next js": "next.js",
+  "next-js": "next.js",
+
+  "nest": "nest.js",
+  "nestjs": "nest.js",
+  "nest js": "nest.js",
+  "nest-js": "nest.js",
+
+  "nuxt": "nuxt.js",
+  "nuxtjs": "nuxt.js",
+  "nuxt js": "nuxt.js",
+  "nuxt-js": "nuxt.js",
+  
+  "angularjs": "angular",
+  "angular js": "angular",
+  "angular.js": "angular",
+  "angular-js": "angular",
+
+  "express": "express.js",
+  "expressjs": "express.js",
+  "express js": "express.js",
+  "express-js": "express.js",
+
+  "tailwindcss": "tailwind",
+  "tailwind css": "tailwind",
+  "tailwind.css": "tailwind",
+
+  "ts": "typescript",
+  "type script": "typescript",
+
+  "react-native": "react native",
+  "reactnative": "react native",
+
+  "springboot": "spring boot",
+  "spring-boot": "spring boot",
+
+  "jakarta ee": "java ee",
+  "java enterprise edition": "java ee",
+
+  "java persistence api": "jpa",
+
+  "python3": "python",
+  "python 3": "python",
+  "py": "python",
+
+  "sklearn": "scikit-learn",
+
+  "tensor flow": "tensorflow",
+
+  "amazon web services": "aws",
+  "simple notification service": "sns",
+  "simple queue service": "sqs",
+  "relational database service": "rds",
+  "simple storage service": "s3",
+  "elastic kubernetes service": "eks",
+  "elastic container service": "ecs",
+  "elastic load balancing": "elb",
+  "sage maker": "sagemaker",
+  "elasticbeanstalk": "beanstalk",
+  "elastic beanstalk": "beanstalk",
+  "aurora": "aurora db",
+
+  "gcp": "google cloud platform",
+  "google cloud": "google cloud platform",
+  "pubsub": "pub/sub",
+  "composer": "cloud composer",
+  "kubernetes engine": "gke",
+  "google kubernetes engine": "gke",
+
+  "azure cloud": "azure",
+  "microsoft azure": "azure",
+  "azure blob storage": "blob storage",
+  "cosmos db": "cosmosdb",
+  "azure cosmos db": "cosmosdb",
+  "azure databricks": "databricks",
+  "azure machine learning": "azure ml",
+  "azure kubernetes service": "aks",
+
+  "postgres": "postgresql",
+  "postgre sql": "postgresql",
+  "postgres sql": "postgresql",
+  
+  "mongo": "mongodb",
+  "mongo db": "mongodb",
+  "mongo-db": "mongodb",
+
+  "ms sql server": "sql server",
+  "microsoft sql server": "sql server",
+
+  "powerbi": "power bi",
+  "power-bi": "power bi",
+  "pbi": "power bi",
+  "bi": "power bi",
+  "ms power bi": "power bi",
+  "microsoft power bi": "power bi",
+  
+  "powerquery": "power query",
+  "power-query": "power query",
+  "m language": "power query",
+  
+  "powerapps": "power apps",
+  "power-apps": "power apps",
+  "microsoft power apps": "power apps",
+  
+  "powerautomate": "power automate",
+  "power-automate": "power automate",
+  "microsoft flow": "power automate",
+  "ms flow": "power automate",
+  
+  "powerpages": "power pages",
+  "power-pages": "power pages",
+  
+  "power-virtual-agents": "power virtual agents",
+  "powervirtualagents": "power virtual agents",
+
+  "sap businessobjects": "business object",
+  "sap bo": "business object",
+  "businessobjects": "business object",
+
+  "apache spark": "spark",
+  "spark-sql": "spark sql",
+  "sparksql": "spark sql",
+
+  "py spark": "pyspark",
+  "py-spark": "pyspark",
+  
+  "mllib": "spark mllib",
+  "spark ml": "spark mllib",
+  "sparkml": "spark mllib",
+  "spark-ml": "spark mllib",
+  "spark machine learning": "spark mllib",
+  
+  "spark-streaming": "spark streaming",
+  "sparkstreaming": "spark streaming",
+  "structured streaming": "spark streaming",
+  
+  "graphx": "spark graphx",
+  "spark-graphx": "spark graphx",
+  "sparkgraphx": "spark graphx",
+
+  "git hub": "github",
+  "git lab": "gitlab",
+
+  "k8s": "kubernetes",
+  "k8": "kubernetes",
+
+  "vb": "visual basic",
+  "vb.net": "visual basic",
+  "vb .net": "visual basic",
+
+  "swiftui": "swift ui",
+  "swift-ui": "swift ui",
+
+  "visual studio code": "vs code",
+  "vscode": "vs code",
+
+  "golang": "go",
+  "go lang": "go",
+  "go-lang": "go",
+
+  "dotnet": ".net",
+  "dot net": ".net",
+  ". net": ".net",
+  "c #": "c#",
+  "csharp": "c#",
+  "c-sharp": "c#",
+
+  "cpp": "c++",
+  "c + +": "c++",
+  "c ++": "c++",
+
+  "shell script": "shell",
+  "shell scripting": "shell",
+
+  "elk stack": "elk",
+
+  "looker studio": "looker"
+}

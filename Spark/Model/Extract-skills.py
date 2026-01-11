@@ -180,8 +180,8 @@ def main():
     extractor = JobSkillsExtractor(model_path="./skill_extractor_model")
     
     # Process JSON file
-    input_file = "Test-extraction.json"  # Change to your input file
-    output_file = "Skills.json"  # Change to your output file
+    input_file = "LinkedinJobPosts.json"
+    output_file = "Skills.json"
     
     extractor.process_json_file(
         input_file=input_file,

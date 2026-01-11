@@ -1,0 +1,41 @@
+{
+  "aws": [
+    "s3", "ec2", "lambda", "dynamodb", "rds", "sqs", "sns",
+    "cloudformation", "cloudwatch", "iam", "vpc", "route53",
+    "beanstalk", "ecs", "eks", "fargate", "glue", "athena",
+    "kinesis", "redshift", "aurora db", "emr", "sagemaker",
+    "step functions", "api gateway", "cognito", "cloudfront",
+    "elb", "alb", "nlb", "eventbridge", "secrets manager",
+    "systems manager", "codepipeline", "codebuild", "codecommit", "codedeploy"
+  ],
+  "gcp": [
+    "bigquery", "cloud storage", "compute engine", "cloud functions",
+    "cloud run", "dataflow", "pub/sub", "firestore",
+    "cloud sql", "cloud spanner", "dataproc", "cloud composer",
+    "cloud build", "artifact registry", "container registry",
+    "gke", "app engine", "cloud tasks", "cloud scheduler",
+    "cloud memorystore", "bigtable", "datastore", "vertex ai",
+    "cloud vision", "cloud natural language", "cloud translate",
+    "cloud logging", "cloud monitoring", "cloud trace", "cloud profiler"
+  ],
+  "azure": [
+    "azure functions", "blob storage", "cosmosdb", "azure sql",
+    "event hubs", "service bus", "azure databricks", "azure synapse",
+    "azure ml", "aks", "app service", "azure devops", "azure pipelines",
+    "azure storage", "azure data factory", "azure stream analytics",
+    "azure logic apps", "azure monitor", "application insights",
+    "azure key vault", "azure active directory", "azure ad",
+    "azure container instances", "azure batch", "azure hdinsight",
+    "azure redis cache", "table storage", "queue storage"
+  ],
+  "ibm": [
+    "ibm cloud", "ibm watson", "watson", "cloud foundry",
+    "ibm db2", "ibm cloud functions", "ibm cloud object storage",
+    "ibm kubernetes service", "ibm cloud pak", "cloudant",
+    "ibm cloud database", "ibm cloud messaging", "ibm event streams"
+  ],
+  "oracle": [
+    "oracle cloud", "oci", "oracle cloud infrastructure",
+    "oracle database", "oracle autonomous database"
+  ]
+}

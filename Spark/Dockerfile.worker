@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 RUN pip install --no-cache-dir \
     pyspark==3.4.0 \
-    elasticsearch==8.15.0 \
+    elasticsearch==9.1.0 \
     torch \
     transformers
 
