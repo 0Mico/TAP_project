@@ -12,21 +12,25 @@ class SkillCategorizer:
     @classmethod
     def load_configs(cls):
         """ Loads skill->provider and skill->topic association """
-
-        if cls.cloud_services_division is None: 
-            cloud_config = SparkFiles.get('cloud_services.json')
-            with open(cloud_config) as f:
-                data = json.load(f)
-                cls.cloud_services_division = {
-                    provider: set(services) for provider, services in data.items()
-                }
-        if cls.technologies is None:
-            technologies_config = SparkFiles.get('technologies.json')
-            with open(technologies_config) as f:
-                data = json.load(f)
-                cls.technologies = {
-                    topic: set(technology) for topic, technology in data.items()
-                }  
+        try:
+            if cls.cloud_services_division is None: 
+                cloud_config = SparkFiles.get('cloud_services.json')
+                with open(cloud_config) as f:
+                    data = json.load(f)
+                    cls.cloud_services_division = {
+                        provider: set(service for service in services) for provider, services in data.items()
+                    }
+            if cls.technologies is None:
+                technologies_config = SparkFiles.get('technologies.json')
+                with open(technologies_config) as f:
+                    data = json.load(f)
+                    cls.technologies = {
+                        topic: set(technology for technology in technologies) for topic, technologies in data.items()
+                    }
+        except FileNotFoundError as e:
+            raise FileNotFoundError(f"Configuration file not found: {e}")
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Invalid JSON in configuration file: {e}")  
 
     @classmethod
     def _get_empty_categories(cls):        
@@ -63,7 +67,7 @@ class SkillCategorizer:
             for provider, services in cls.cloud_services_division.items():
                 if skill_lower in services:
                     categories['cloud_providers'].add(provider)
-                    cloud_services[str(provider)].add(skill_lower)
+                    cloud_services[provider].add(skill_lower)
 
             for topic, technologies in cls.technologies.items():
                 if skill_lower in technologies:

@@ -17,7 +17,7 @@ class SkillNormalizer:
                 with open(config_path, 'r') as f:
                     cls.normalization_map = json.load(f)
             except Exception as e:
-                print(f'Error: {e}')
+                print(f'Error loading the normalization dictionary: {e}')
                 cls.normalization_map = {}
 
     @classmethod
@@ -26,10 +26,9 @@ class SkillNormalizer:
 
         if not skill:
             return skill
-        skill_lower = skill.lower().strip()
-        if skill_lower in cls.normalization_map:
-            return cls.normalization_map[skill_lower]   
-        return skill_lower
+        if skill in cls.normalization_map:
+            return cls.normalization_map[skill]   
+        return skill
     
     @classmethod
     def normalize_skills_list(cls, raw_skills):
