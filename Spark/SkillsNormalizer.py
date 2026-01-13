@@ -41,6 +41,7 @@ class SkillNormalizer:
 
         normalized_skills = set()
         for skill in raw_skills:
+            skill = skill.removeprefix('##')
             normalized = cls.normalize_skill(skill)
             if normalized:
                 normalized_skills.add(normalized)          

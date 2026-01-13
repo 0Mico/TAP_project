@@ -94,6 +94,9 @@
   "azure databricks": "databricks",
   "azure machine learning": "azure ml",
   "azure kubernetes service": "aks",
+  "active directory": "azure ad",
+  "entra id": "azure ad",
+  "microsoft entra id": "azure ad",
 
   "postgres": "postgresql",
   "postgre sql": "postgresql",

@@ -24,9 +24,9 @@
     "azure ml", "aks", "app service", "azure devops", "azure pipelines",
     "azure storage", "azure data factory", "azure stream analytics",
     "azure logic apps", "azure monitor", "application insights",
-    "azure key vault", "azure active directory", "azure ad",
-    "azure container instances", "azure batch", "azure hdinsight",
-    "azure redis cache", "table storage", "queue storage"
+    "azure key vault", "azure ad", "azure container instances", 
+    "azure batch", "azure hdinsight", "azure redis cache", 
+    "table storage", "queue storage"
   ],
   "ibm": [
     "ibm cloud", "ibm watson", "watson", "cloud foundry",
@@ -36,6 +36,7 @@
   ],
   "oracle": [
     "oracle cloud", "oci", "oracle cloud infrastructure",
-    "oracle database", "oracle autonomous database"
+    "oracle database", "oracle autonomous database",
+    "ibm doors"
   ]
 }
