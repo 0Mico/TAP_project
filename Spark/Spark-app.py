@@ -1,7 +1,7 @@
 import os
 import torch
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import from_json, col, udf
+from pyspark.sql.functions import from_json, col, udf, current_timestamp
 from pyspark.sql.types import (
     StructType, StructField, StringType, ArrayType
 )
@@ -250,6 +250,7 @@ def main():
     # Extract skills from description, then drop the description
     enriched_df = parsed_df \
         .withColumn("Skills", extract_skills_udf(col("Description"))) \
+        .withColumn("timestamp", current_timestamp()) \
         .drop("Description")
     
     #query = write_to_elasticsearch(enriched_df, elasticsearch_host, elasticsearch_port)
