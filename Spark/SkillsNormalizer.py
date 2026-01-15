@@ -12,7 +12,7 @@ class SkillNormalizer:
         """ Load normalization map from config directory """
         
         if cls.normalization_map is None:
-            config_path = SparkFiles.get('normalization_map.json')
+            config_path = SparkFiles.get('skills_normalization_map.json')
             try:
                 with open(config_path, 'r') as f:
                     cls.normalization_map = json.load(f)

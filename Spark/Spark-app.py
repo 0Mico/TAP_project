@@ -10,6 +10,7 @@ import shutil
 
 from SkillsNormalizer import SkillNormalizer
 from SkillsCategorizer import SkillCategorizer
+from JobTitlesNormalizer import JobTitleNormalizer
 
 class SkillsExtractor:
     """Class to load the model only once per executor for efficiency"""
@@ -224,17 +225,18 @@ def main():
     
     spark = create_spark_session()
     
-    # Register UDF for skill extraction
+    # Load data schemas
+    kafka_messages_schema = get_kafka_schema()
     final_skills_format = get_skills_schema()
+    
+    # Register UDF functions
     extract_skills_udf = udf(SkillsExtractor.extract_skills, final_skills_format)
+    title_normalization_udf = udf(JobTitleNormalizer.normalize_job_title, StringType())
     
     # Read from Kafka
     print("Connecting to Kafka...")
     kafka_df = connect_to_kafka(spark, kafka_bootstrap_servers)
     print("✓ Connected to Kafka\n")
-    
-    # Parse JSON from Kafka messages
-    kafka_messages_schema = get_kafka_schema()
     
     print("Processing job posts...")
     parsed_df = kafka_df \
@@ -250,6 +252,10 @@ def main():
         .withColumn("Employment_type", spark_lower(col("Employment_type"))) \
         .withColumn("Job_Function", spark_lower(col("Job_Function"))) \
         .withColumn("Industry_type", spark_lower(col("Industry_type")))
+    
+    # Normalize job titles
+    parsed_df = parsed_df \
+        .withColumn("Title", title_normalization_udf(col("Title")))
     
     # Extract skills from description, then drop the description
     enriched_df = parsed_df \

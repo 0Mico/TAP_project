@@ -1,0 +1,74 @@
+{
+  "front end dev": "frontend dev",
+  "front-end dev": "frontend dev",
+  "frontend developer": "frontend dev",
+  "front end developer": "frontend dev",
+  "front-end developer": "frontend dev",
+  "front end programmer": "frontend dev",
+  "front-end programmer": "frontend dev",
+  "frontend programmer": "frontend dev",
+
+  "back end dev": "backend dev",
+  "back-end dev": "backend dev",
+  "backend developer": "backend dev",
+  "back end developer": "backend dev",
+  "back-end developer": "backend dev",
+  "back end programmer": "backend dev",
+  "back-end programmer": "backend dev",
+  "backend programmer": "backend dev",
+
+  "full stack dev": "fullstack dev",
+  "full-stack dev": "fullstack dev",
+  "fullstack developer": "fullstack dev",
+  "full stack developer": "fullstack dev",
+  "full-stack developer": "fullstack dev",
+  "full stack programmer": "fullstack dev",
+  "full-stack programmer": "fullstack dev",
+  "fullstack programmer": "fullstack dev",
+
+  "mobile developer": "mobile dev",
+  "mobile application developer": "mobile dev",
+  "mobile app developer": "mobile dev",
+  "app developer": "mobile dev",
+  "android developer": "android dev",
+  "ios developer": "ios dev",
+  "mobile programmer": "mobile dev",
+  "mobile application programmer": "mobile dev",
+  "mobile app programmer": "mobile dev",
+  "app programmer": "mobile dev",
+  "android programmer": "android dev",
+  "ios programmer": "ios dev",
+
+  "data analytics": "data analyst",
+  "data analysis": "data analyst",
+  "business data analyst": "data analyst",
+  "business analyst": "data analyst",
+
+  "machine learning engineer": "ml engineer",
+  "artificial intelligence engineer": "ai engineer",
+  "machine learning developer": "ml dev",
+  "artificial intelligence developer": "ai dev",
+  "machine learning programmer": "ml dev",
+  "artificial intelligence programmer": "ai dev",
+
+  "cloud infrastructure engineer": "cloud engineer",
+  "cloud developer": "cloud dev",
+  "cloud programmer": "cloud dev",
+  "cloud solutions architect": "cloud architect",
+
+  "information security engineer": "security engineer",
+  "infosec engineer": "security engineer",
+  "application security engineer": "app security engineer",
+  "appsec engineer": "app security engineer",
+
+  "quality assurance engineer": "qa engineer",
+
+  "user experience designer": "ux designer",
+  "user interface designer": "ui designer",
+
+  "game developer": "game dev",
+  "game programmer": "game dev",
+
+  "database administrator": "db administrator",
+  "database engineer": "db engineer"
+}
