@@ -215,9 +215,9 @@ def scrapeJobs(url: str):
 
 
 if __name__ == "__main__":
-    keywords = ['Data+Analyst', 'Data+Scientist', 'Cloud+Engineer', 'Devops', 'Frontend+Developer', 'Backend+Developer', 
-            'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence',
-            'Python+Developer']
+    keywords = ['Data+Analyst', 'Frontend+Developer', 'Data+Scientist', 'Cloud+Engineer', 'Backend+Developer', 'Devops',  
+                'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence',
+                'Python+Developer']
 
     job_link = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
     for k in keywords:

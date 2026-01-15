@@ -41,7 +41,6 @@ create_index_if_not_exists "job_posts_with_skills" '{
       "Company_name": {"type": "keyword"},
       "Location": {"type": "keyword"},
       "Pubblication_date": {"type": "date", "format": "yyyy-MM-dd"},
-      "timestamp": {"type": "date", "format": "yyyy-MM-dd"},
       "Skills": {
         "properties": {
           "raw_skills": {"type": "keyword"},
@@ -53,9 +52,6 @@ create_index_if_not_exists "job_posts_with_skills" '{
               "backend_frameworks": {"type": "keyword"},
               "databases": {"type": "keyword"},
               "devops_tools": {"type": "keyword"},
-              "monitoring_tools": {"type": "keyword"},
-              "data_science_libraries": {"type": "keyword"},
-              "bi_tools": {"type": "keyword"},
               "testing_frameworks": {"type": "keyword"}
             }
           },

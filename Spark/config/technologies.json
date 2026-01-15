@@ -40,30 +40,6 @@
     "flux", "jenkins", "circleci", "travis ci", "bamboo",
     "teamcity", "octopus deploy", "spinnaker"
   ],
-  "monitoring_tools": [
-    "prometheus", "grafana", "datadog", "new relic", "splunk",
-    "logstash", "kibana", "jaeger", "zipkin", "elk",
-    "sentry", "pagerduty", "opsgenie", "cloudwatch",
-    "azure monitor", "application insights", "dynatrace",
-    "appdynamics", "elastic apm"
-  ],
-  "data_science_libraries": [
-    "pandas", "numpy", "scipy", "scikit-learn", "sklearn",
-    "tensorflow", "pytorch", "keras", "xgboost", "lightgbm",
-    "catboost", "statsmodels", "seaborn", "matplotlib",
-    "plotly", "bokeh", "jupyter", "jupyter notebook",
-    "spacy", "nltk", "gensim", "transformers", "hugging face",
-    "opencv", "pillow", "scrapy", "beautiful soup"
-  ],
-  "bi_tools": [
-    "power bi", "power query", "power apps", "power automate",
-    "power pages", "power virtual agents", "dax",
-    "data analysis expressions", "power pivot", "powerpivot",
-    "power view", "powerview", "m language", "tableau",
-    "qlik", "qlik sense", "qlikview", "qlik view",
-    "looker", "google analytics", "business object",
-    "sap analytics cloud", "sap lumira", "sap webi", "crystal reports"
-  ],
   "testing_frameworks": [
     "pytest", "unittest", "jest", "mocha", "jasmine",
     "junit", "testng", "selenium", "cypress", "playwright",

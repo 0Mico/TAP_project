@@ -1,7 +1,7 @@
 import os
 import torch
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import from_json, col, udf, current_timestamp
+from pyspark.sql.functions import from_json, col, udf, current_timestamp, lower as spark_lower
 from pyspark.sql.types import (
     StructType, StructField, StringType, ArrayType
 )
@@ -121,6 +121,7 @@ class SkillsExtractor:
                 'categories': SkillCategorizer._get_empty_categories(),
                 'cloud_services': SkillCategorizer._get_empty_cloud_services()
             }
+ 
     
 
 def create_spark_session():
@@ -132,7 +133,7 @@ def create_spark_session():
     return spark
 
 
-"""def connect_to_kafka(spark, kafka_bootstrap_servers):
+def connect_to_kafka(spark, kafka_bootstrap_servers):
     kafka_df = spark.readStream \
         .format("kafka") \
         .option("kafka.bootstrap.servers", kafka_bootstrap_servers) \
@@ -140,7 +141,7 @@ def create_spark_session():
         .option("startingOffsets", "earliest") \
         .option("failOnDataLoss", "false") \
         .load()
-    return kafka_df"""
+    return kafka_df
 
 
 def get_kafka_schema():
@@ -185,7 +186,7 @@ def get_skills_schema():
         ]), True)
     ])
 
-"""def write_to_elasticsearch(enriched_df, host, port):
+def write_to_elasticsearch(enriched_df, host, port):
     query = enriched_df.writeStream \
         .outputMode("append") \
         .format("org.elasticsearch.spark.sql") \
@@ -197,7 +198,7 @@ def get_skills_schema():
         .option("es.nodes.wan.only", "true") \
         .option("checkpointLocation", "/tmp/spark-checkpoint") \
         .start()
-    return query"""
+    return query
 
 
 
@@ -229,14 +230,7 @@ def main():
     
     # Read from Kafka
     print("Connecting to Kafka...")
-    kafka_df = spark.readStream \
-        .format("kafka") \
-        .option("kafka.bootstrap.servers", kafka_bootstrap_servers) \
-        .option("subscribe", "deduped_job_posts") \
-        .option("startingOffsets", "earliest") \
-        .option("failOnDataLoss", "false") \
-        .load()
-    #kafka_df = connect_to_kafka(spark, kafka_bootstrap_servers)
+    kafka_df = connect_to_kafka(spark, kafka_bootstrap_servers)
     print("✓ Connected to Kafka\n")
     
     # Parse JSON from Kafka messages
@@ -247,23 +241,22 @@ def main():
         .select(from_json(col("value").cast("string"), kafka_messages_schema).alias("data")) \
         .select("data.*")
     
+    # Write to elasticsearch only lowercase fields
+    parsed_df = parsed_df \
+        .withColumn("Title", spark_lower(col("Title"))) \
+        .withColumn("Company_name", spark_lower(col("Company_name"))) \
+        .withColumn("Location", spark_lower(col("Location"))) \
+        .withColumn("Seniority_level", spark_lower(col("Seniority_level"))) \
+        .withColumn("Employment_type", spark_lower(col("Employment_type"))) \
+        .withColumn("Job_Function", spark_lower(col("Job_Function"))) \
+        .withColumn("Industry_type", spark_lower(col("Industry_type")))
+    
     # Extract skills from description, then drop the description
     enriched_df = parsed_df \
         .withColumn("Skills", extract_skills_udf(col("Description"))) \
-        .withColumn("timestamp", current_timestamp()) \
         .drop("Description")
     
-    #query = write_to_elasticsearch(enriched_df, elasticsearch_host, elasticsearch_port)
-    query = enriched_df.writeStream \
-        .format("org.elasticsearch.spark.sql") \
-        .option("es.nodes", elasticsearch_host) \
-        .option("es.port", elasticsearch_port) \
-        .option("es.resource", "job_posts_with_skills") \
-        .option("es.mapping.id", "Job_ID") \
-        .option("es.write.operation", "upsert") \
-        .option("es.nodes.wan.only", "true") \
-        .option("checkpointLocation", "/tmp/spark-checkpoint") \
-        .start()
+    query = write_to_elasticsearch(enriched_df, elasticsearch_host, elasticsearch_port)
     
     print("✓ Streaming started successfully!")
     print("\nWaiting for job posts from Kafka...")
