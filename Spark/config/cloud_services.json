@@ -7,7 +7,7 @@
     "step functions", "api gateway", "cognito", "cloudfront",
     "elb", "alb", "nlb", "eventbridge", "secrets manager",
     "systems manager", "codepipeline", "codebuild", "codecommit", "codedeploy",
-    "cdk", "aws config", "aws contrl tower"
+    "cdk", "aws config", "aws control tower"
   ],
   "gcp": [
     "bigquery", "cloud storage", "compute engine", "cloud functions",

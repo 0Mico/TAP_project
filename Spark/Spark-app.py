@@ -1,10 +1,8 @@
 import os
 import torch
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import from_json, col, udf, current_timestamp, lower as spark_lower
-from pyspark.sql.types import (
-    StructType, StructField, StringType, ArrayType
-)
+from pyspark.sql.functions import from_json, col, udf, lower as spark_lower
+from pyspark.sql.types import (StructType, StructField, StringType, ArrayType)
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 import shutil
 
