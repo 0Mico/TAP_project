@@ -16,11 +16,11 @@ The scraper uses Logstash to ingest data in:
 
 - an Elasticsearch index to remove duplicates and to make sure that the posts that go ahead in the pipeline contain the description field, from where the skills are extracted;
 
-- a Kafka topic from where the posts will be read by Spark, that handles the normalization and categorization of some fields of the job posts, and then extracts the skills.
+- a Kafka topic from where the posts will be read by Spark.
 
-Spark then writes the enriched data to an Elsticsearch index (different from the one used by Logstash).
+Spark handles the normalization and categorization of some fields of the job posts, then extracts the skills and writes the enriched data to an Elsticsearch index (different from the one used by Logstash).
 
-At the end of the pipeline is used Kibana to show insights about the processed posts.
+At the end of the pipeline Kibana is used to show insights about the processed posts.
 
 ## Prerequisites
 
