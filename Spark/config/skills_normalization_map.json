@@ -78,6 +78,7 @@
   "elasticbeanstalk": "beanstalk",
   "elastic beanstalk": "beanstalk",
   "aurora": "aurora db",
+  "aws cdk": "cdk",
 
   "gcp": "google cloud platform",
   "google cloud": "google cloud platform",

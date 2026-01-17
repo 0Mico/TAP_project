@@ -6,7 +6,8 @@
     "kinesis", "redshift", "aurora db", "emr", "sagemaker",
     "step functions", "api gateway", "cognito", "cloudfront",
     "elb", "alb", "nlb", "eventbridge", "secrets manager",
-    "systems manager", "codepipeline", "codebuild", "codecommit", "codedeploy"
+    "systems manager", "codepipeline", "codebuild", "codecommit", "codedeploy",
+    "cdk", "aws config", "aws contrl tower"
   ],
   "gcp": [
     "bigquery", "cloud storage", "compute engine", "cloud functions",
