@@ -32,3 +32,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Jupyter related
+*.ipynb
+*.ipynb_checkpoints
+*meme*

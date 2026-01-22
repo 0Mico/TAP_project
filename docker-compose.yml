@@ -115,6 +115,11 @@ services:
       - SPARK_WORKER_MEMORY=4G
       - SPARK_WORKER_CORES=2
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     depends_on:
       spark-master:
         condition: service_healthy
@@ -132,6 +137,11 @@ services:
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - ELASTICSEARCH_HOST=elasticsearch
       - ELASTICSEARCH_PORT=9200
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep -f spark-submit || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
     depends_on:
       spark-master:
         condition: service_healthy

@@ -63,6 +63,7 @@
   "py": "python",
 
   "sklearn": "scikit-learn",
+  "scikit": "scikit-learn",
 
   "tensor flow": "tensorflow",
 
@@ -197,5 +198,7 @@
 
   "elk stack": "elk",
 
-  "looker studio": "looker"
+  "looker studio": "looker",
+
+  "sense": "qliksense"
 }

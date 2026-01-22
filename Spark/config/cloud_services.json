@@ -27,7 +27,7 @@
     "azure logic apps", "azure monitor", "application insights",
     "azure key vault", "azure ad", "azure container instances", 
     "azure batch", "azure hdinsight", "azure redis cache", 
-    "table storage", "queue storage"
+    "table storage", "queue storage", "azure boards"
   ],
   "ibm": [
     "ibm cloud", "ibm watson", "watson", "cloud foundry",

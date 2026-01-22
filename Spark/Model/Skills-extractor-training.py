@@ -404,7 +404,7 @@ def main():
     
     # Step 1: Prepare dataset
     preparator = DatasetPreparator(json_dir="./job-posts")
-    train_dataset, val_dataset = preparator.create_datasets(test_size=0.2, random_seed=43)
+    train_dataset, val_dataset = preparator.create_datasets(test_size=0.2, random_seed=15)
     
     # Step 2: Train model
     trainer = SkillExtractorTrainer()
