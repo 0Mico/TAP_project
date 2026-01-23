@@ -1,9 +1,8 @@
 import json
-from pathlib import Path
-from typing import List, Dict
 import torch
-from transformers import AutoTokenizer, AutoModelForTokenClassification
 from tqdm import tqdm
+from typing import List, Dict
+from transformers import AutoTokenizer, AutoModelForTokenClassification
 
 
 class JobSkillsExtractor:
@@ -19,9 +18,14 @@ class JobSkillsExtractor:
         
         # Get label mappings from model config
         self.id2label = self.model.config.id2label
-        print(f"✓ Model loaded successfully!")
-        print(f"Labels: {list(self.id2label.values())}\n")
     
+
+    def _reconstruct_word(self, tokens: List[str]) -> str:
+        if not tokens:
+            return ""
+        return self.tokenizer.convert_tokens_to_string(tokens).strip()
+
+
     def extract_skills(self, text: str) -> List[str]:
         if not text or not text.strip():
             return []
@@ -38,7 +42,6 @@ class JobSkillsExtractor:
         # Predict
         with torch.no_grad():
             outputs = self.model(**inputs)
-        
         predictions = torch.argmax(outputs.logits, dim=2)
         
         # Get tokens and labels
@@ -75,19 +78,13 @@ class JobSkillsExtractor:
                         skills.add(skill_text)
                     current_skill = []
         
-        # Don't forget last skill
+        # Last skill
         if current_skill:
             skill_text = self._reconstruct_word(current_skill)
             if skill_text:
                 skills.add(skill_text)
         
         return list(skills)
-    
-    def _reconstruct_word(self, tokens: List[str]) -> str:
-        if not tokens:
-            return ""
-               
-        return self.tokenizer.convert_tokens_to_string(tokens).strip()
 
     
     def process_job_post(self, job_post: Dict) -> Dict:
@@ -100,23 +97,12 @@ class JobSkillsExtractor:
         # Remove description and add skills
         result.pop("Description", None)
         result["Skills"] = skills
-        
         return result
     
-    def process_json_file(
-        self, 
-        input_file: str, 
-        output_file: str,
-        show_progress: bool = True
-        ):
-        """
-        Process an entire JSON file with multiple job posts
-        
-        Args:
-            input_file: Path to input JSON file
-            output_file: Path to output JSON file
-            show_progress: Whether to show progress bar
-        """
+
+    def process_json_file(self, input_file: str, output_file: str, show_progress: bool = True):
+        """ Process a JSON file with multiple job posts """
+
         print(f"Reading job posts from {input_file}...")
         
         # Load input file
@@ -128,7 +114,6 @@ class JobSkillsExtractor:
             job_posts = [job_posts]
         
         print(f"Found {len(job_posts)} job posts")
-        print("Extracting skills...\n")
         
         # Process each job post
         results = []
@@ -149,29 +134,9 @@ class JobSkillsExtractor:
             json.dump(results, f, indent=2, ensure_ascii=False)
         
         print(f"✓ Successfully processed {len(results)} job posts!")
-        
-        # Show some statistics
-        total_skills = sum(len(r.get("Skills", [])) for r in results)
-        avg_skills = total_skills / len(results) if results else 0
-        print(f"\nStatistics:")
-        print(f"  Total skills extracted: {total_skills}")
-        print(f"  Average skills per job: {avg_skills:.1f}")
-    
-    def process_single_job(self, job_post_dict: Dict) -> Dict:
-        """
-        Process a single job post dictionary
-        
-        Args:
-            job_post_dict: Job post dictionary
-            
-        Returns:
-            Processed dictionary with skills
-        """
-        return self.process_job_post(job_post_dict)
 
 
 def main():
-    """Example usage"""
     print("="*60)
     print("JOB SKILLS EXTRACTOR")
     print("="*60 + "\n")
@@ -188,16 +153,6 @@ def main():
         output_file=output_file,
         show_progress=True
     )
-    
-    print("\n" + "="*60)
-    print("EXAMPLE OUTPUT")
-    print("="*60)
-    
-    # Show example of first job
-    with open(output_file, 'r', encoding='utf-8') as f:
-        results = json.load(f)
-        if results:
-            print(json.dumps(results[0], indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,4 @@
 import json
-import os
 from pathlib import Path
 from typing import List, Dict, Tuple
 import torch
@@ -14,7 +13,7 @@ from transformers import (
 )
 from sklearn.model_selection import train_test_split
 import numpy as np
-from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
+from seqeval.metrics import f1_score, precision_score, recall_score
 
 
 class SkillNERDataset(Dataset):
@@ -48,8 +47,10 @@ class DatasetPreparator:
         }
         self.id2label = {v: k for k, v in self.label2id.items()}
         
+
     def load_json_files(self) -> List[Dict]:
         """Load all JSON files from directory"""
+
         json_files = list(Path(self.json_dir).glob("*.json"))
         
         print(f"Found {len(json_files)} JSON files")
@@ -82,13 +83,10 @@ class DatasetPreparator:
         
         return job_posts
     
+
     def extract_tokens_and_labels(self, job_posts: List[Dict]) -> Tuple[List[List[str]], List[List[str]]]:
-        """
-        Extract tokens and labels from job posts
+        """ Extract tokens and labels from job posts """
         
-        Returns:
-            Tuple of (tokens_list, labels_list)
-        """
         tokens_list = []
         labels_list = []
         
@@ -112,48 +110,11 @@ class DatasetPreparator:
                 labels_list.append(labels)
         
         return tokens_list, labels_list
-    
-    def show_dataset_statistics(self, tokens_list: List[List[str]], labels_list: List[List[str]]):
-        """Display statistics about the dataset"""
-        print("\n" + "="*60)
-        print("DATASET STATISTICS")
-        print("="*60)
-        
-        total_jobs = len(tokens_list)
-        total_tokens = sum(len(tokens) for tokens in tokens_list)
-        
-        # Count skills
-        skill_counts = {
-            'B-SKILL': 0,
-            'I-SKILL': 0,
-            'O': 0
-        }
-        
-        for labels in labels_list:
-            for label in labels:
-                skill_counts[label] = skill_counts.get(label, 0) + 1
-        
-        # Count unique skills (number of B-SKILL tags)
-        total_skills = skill_counts['B-SKILL']
-        
-        # Calculate averages
-        avg_tokens = total_tokens / total_jobs if total_jobs > 0 else 0
-        avg_skills = total_skills / total_jobs if total_jobs > 0 else 0
-        
-        print(f"\nLabel Distribution:")
-        print(f"  O (Outside):        {skill_counts['O']:,} ({skill_counts['O']/total_tokens*100:.1f}%)")
-        print(f"  B-SKILL (Begin):    {skill_counts['B-SKILL']:,} ({skill_counts['B-SKILL']/total_tokens*100:.1f}%)")
-        print(f"  I-SKILL (Inside):   {skill_counts['I-SKILL']:,} ({skill_counts['I-SKILL']/total_tokens*100:.1f}%)")
-        
-        print("="*60 + "\n")
+
     
     def prepare_encodings(self, tokens_list: List[List[str]], labels_list: List[List[str]]) -> Tuple[Dict, List[List[int]]]:
-        """
-        Prepare encodings compatible with BERT tokenizer
-        
-        The key challenge: Your tokens are already pre-tokenized by BERT,
-        so we need to align them correctly with BERT's tokenization
-        """
+        """ Prepare encodings compatible with BERT tokenizer """
+
         all_input_ids = []
         all_attention_masks = []
         all_labels = []
@@ -171,6 +132,7 @@ class DatasetPreparator:
             
             # Convert labels to IDs and add special token labels
             label_ids = [self.label2id[label] for label in labels]
+
             # -100 is the ignore index for loss calculation (for [CLS] and [SEP])
             label_ids = [-100] + label_ids + [-100]
             
@@ -183,19 +145,17 @@ class DatasetPreparator:
             'attention_mask': all_attention_masks
         }, all_labels
     
+
     def pad_sequences(self, encodings: Dict, labels: List[List[int]]) -> Tuple[Dict, List[List[int]]]:
         """Pad sequences to the same length"""
+
         max_length = max(len(seq) for seq in encodings['input_ids'])
         
         padded_input_ids = []
         padded_attention_masks = []
         padded_labels = []
         
-        for input_ids, attention_mask, label_ids in zip(
-            encodings['input_ids'], 
-            encodings['attention_mask'], 
-            labels
-        ):
+        for input_ids, attention_mask, label_ids in zip(encodings['input_ids'], encodings['attention_mask'], labels):
             padding_length = max_length - len(input_ids)
             
             # Pad input_ids with tokenizer's pad_token_id
@@ -218,30 +178,18 @@ class DatasetPreparator:
             'attention_mask': padded_attention_masks
         }, padded_labels
     
+
     def create_datasets(self, test_size: float = 0.2, random_seed: int = 5) -> Tuple[SkillNERDataset, SkillNERDataset]:
-        """
-        Create train and validation datasets
-        
-        Args:
-            test_size: Proportion for validation set (default 0.2 = 20%)
-            random_seed: Random seed for reproducibility
-            
-        Returns:
-            Tuple of (train_dataset, val_dataset)
-        """
+        """ Create train and validation datasets """
+
         print("Loading and preparing dataset...\n")
         
-        # Load JSON files
         job_posts = self.load_json_files()
         
         if not job_posts:
             raise ValueError("No valid job posts found!")
         
-        # Extract tokens and labels
         tokens_list, labels_list = self.extract_tokens_and_labels(job_posts)
-        
-        # Show statistics
-        self.show_dataset_statistics(tokens_list, labels_list)
         
         # Split into train and validation
         train_tokens, val_tokens, train_labels, val_labels = train_test_split(
@@ -254,14 +202,12 @@ class DatasetPreparator:
         print(f"  Training samples:   {len(train_tokens)} ({(1-test_size)*100:.0f}%)")
         print(f"  Validation samples: {len(val_tokens)} ({test_size*100:.0f}%)\n")
         
-        # Prepare encodings
         print("Encoding training data...")
         train_encodings, train_label_ids = self.prepare_encodings(train_tokens, train_labels)
         
         print("Encoding validation data...")
         val_encodings, val_label_ids = self.prepare_encodings(val_tokens, val_labels)
         
-        # Pad sequences
         print("Padding sequences...")
         train_encodings, train_label_ids = self.pad_sequences(train_encodings, train_label_ids)
         val_encodings, val_label_ids = self.pad_sequences(val_encodings, val_label_ids)
@@ -289,6 +235,7 @@ class SkillExtractorTrainer:
     
     def compute_metrics(self, pred):
         """Compute evaluation metrics"""
+
         predictions, labels = pred
         predictions = np.argmax(predictions, axis=2)
         
@@ -308,16 +255,10 @@ class SkillExtractorTrainer:
             'f1': f1_score(true_labels, true_predictions),
         }
     
-    def train(
-        self, 
-        train_dataset: SkillNERDataset, 
-        val_dataset: SkillNERDataset,
-        output_dir: str = "./skill_extractor_model",
-        num_epochs: int = 15,
-        batch_size: int = 8,
-        learning_rate: float = 2e-5,
-        warmup_ratio: float = 0.1
-    ):
+
+    def train(self, train_dataset: SkillNERDataset, val_dataset: SkillNERDataset, output_dir: str = "./skill_extractor_model",
+            num_epochs: int = 15, batch_size: int = 8, learning_rate: float = 2e-5, warmup_ratio: float = 0.1):
+        
         """Train the model"""
         
         print("="*60)
@@ -329,8 +270,6 @@ class SkillExtractorTrainer:
         print(f"Epochs: {num_epochs}")
         print(f"Batch size: {batch_size}")
         print(f"Learning rate: {learning_rate}")
-        #print(f"Warmup steps: {warmup_steps}")
-        print(f"Warmup ratio: {warmup_ratio}")
         print("="*60 + "\n")
         
         # Initialize model
@@ -355,7 +294,6 @@ class SkillExtractorTrainer:
             metric_for_best_model="f1",
             greater_is_better=True,
             logging_steps=50,
-            #warmup_steps=warmup_steps,
             warmup_ratio=warmup_ratio,
             push_to_hub=False,
             label_smoothing_factor=0.1,
@@ -377,7 +315,6 @@ class SkillExtractorTrainer:
             callbacks=[EarlyStoppingCallback(early_stopping_patience=3)] 
         )
         
-        # Train
         print("Starting training...\n")
         trainer.train()
         
@@ -404,7 +341,7 @@ def main():
     
     # Step 1: Prepare dataset
     preparator = DatasetPreparator(json_dir="./job-posts")
-    train_dataset, val_dataset = preparator.create_datasets(test_size=0.2, random_seed=15)
+    train_dataset, val_dataset = preparator.create_datasets(test_size=0.2, random_seed=95)
     
     # Step 2: Train model
     trainer = SkillExtractorTrainer()
@@ -412,9 +349,9 @@ def main():
         train_dataset,
         val_dataset,
         output_dir="./skill_extractor_model",
-        num_epochs=15,        # Good for small dataset (200 samples)
-        batch_size=8,        # Adjust based on your GPU memory
-        learning_rate=3e-5,  # Conservative for fine-tuning
+        num_epochs=15,        
+        batch_size=8,        
+        learning_rate=2e-5,
         warmup_ratio=0.1
     )
 

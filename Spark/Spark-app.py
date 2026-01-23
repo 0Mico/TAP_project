@@ -110,11 +110,7 @@ class SkillsExtractor:
             return final_skills
         
         except Exception as e:
-            import traceback
-            error_msg = f"Error extracting skills: {str(e)}\n{traceback.format_exc()}"
-            with open('/tmp/spark_errors.log', 'a') as f:
-                f.write(error_msg + '\n')
-            
+            print(f"Error extrcting skills: {e}")            
             return {
                 'raw_skills': [],
                 'categories': SkillCategorizer._get_empty_categories(),
@@ -171,8 +167,6 @@ def get_skills_schema():
             StructField("databases", ArrayType(StringType()), True),
             StructField("devops_tools", ArrayType(StringType()), True),
             StructField("monitoring_tools", ArrayType(StringType()), True),
-            StructField("data_science_libraries", ArrayType(StringType()), True),
-            StructField("bi_tools", ArrayType(StringType()), True),
             StructField("testing_frameworks", ArrayType(StringType()), True)
         ]), True),
         
@@ -201,11 +195,7 @@ def write_to_elasticsearch(enriched_df, host, port):
 
 
 
-def main():
-    print("="*60)
-    print("JOB POST SKILLS EXTRACTOR - SPARK STREAMING")
-    print("="*60)
-    
+def main():  
     if os.path.exists("/tmp/spark-checkpoint"):
         print("⚠️ DELETING CHECKPOINT at /tmp/spark-checkpoint to force re-processing...")
         shutil.rmtree("/tmp/spark-checkpoint")
@@ -241,7 +231,7 @@ def main():
         .select(from_json(col("value").cast("string"), kafka_messages_schema).alias("data")) \
         .select("data.*")
     
-    # Write to elasticsearch only lowercase fields
+    # Make all fields lowercase
     parsed_df = parsed_df \
         .withColumn("Title", spark_lower(col("Title"))) \
         .withColumn("Company_name", spark_lower(col("Company_name"))) \
@@ -261,10 +251,6 @@ def main():
         .drop("Description")
     
     query = write_to_elasticsearch(enriched_df, elasticsearch_host, elasticsearch_port)
-    
-    print("✓ Streaming started successfully!")
-    print("\nWaiting for job posts from Kafka...")
-    print("Press Ctrl+C to stop\n")
     
     # Wait for termination
     query.awaitTermination()

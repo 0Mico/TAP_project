@@ -1,4 +1,3 @@
-import os
 import json
 
 from pyspark import SparkFiles
@@ -58,8 +57,6 @@ class SkillCategorizer:
         cls.load_configs()
         categories = cls._get_empty_categories()
         cloud_services = cls._get_empty_cloud_services()
-        print(categories)
-        print(cloud_services)
         
         for skill in normalized_skills:
             skill_lower = skill.lower()

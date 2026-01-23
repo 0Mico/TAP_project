@@ -1,4 +1,3 @@
-from hmac import new
 import requests
 import json
 import time
@@ -215,7 +214,7 @@ def scrapeJobs(url: str):
 
 
 if __name__ == "__main__":
-    keywords = ['Data+Analyst', 'Frontend+Developer', 'Data+Scientist', 'Cloud+Engineer', 'Backend+Developer', 'Devops',  
+    keywords = ['Data+Analyst', 'Frontend+Developer', 'Backend+Developer', 'Data+Scientist', 'Cloud+Engineer', 'Devops',  
                 'Software+Engineer', 'Fullstack+Developer', 'Mobile+Developer', 'Game+Developer', 'Artificial+Intelligence',
                 'Python+Developer']
 
