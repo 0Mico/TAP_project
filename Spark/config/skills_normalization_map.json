@@ -87,6 +87,10 @@
   "composer": "cloud composer",
   "kubernetes engine": "gke",
   "google kubernetes engine": "gke",
+  "google cloud storage": "cloud storage",
+  "gcs": "cloud storage",
+  "gcp stack driver": "stack driver",
+  "google cloud stack driver": "stack driver",
 
   "azure cloud": "azure",
   "microsoft azure": "azure",
@@ -99,6 +103,10 @@
   "active directory": "azure ad",
   "entra id": "azure ad",
   "microsoft entra id": "azure ad",
+  "datalake storage": "data lake storage",
+  "azure data lake storage": "data lake storage",
+  "azure adls": "data lake storage",
+  "adls": "data lake storage",
 
   "postgres": "postgresql",
   "postgre sql": "postgresql",
@@ -200,5 +208,7 @@
 
   "looker studio": "looker",
 
-  "sense": "qliksense"
+  "sense": "qliksense",
+
+  "db2": "ibm db2"
 }

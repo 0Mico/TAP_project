@@ -17,7 +17,8 @@
     "gke", "app engine", "cloud tasks", "cloud scheduler",
     "cloud memorystore", "bigtable", "datastore", "vertex ai",
     "cloud vision", "cloud natural language", "cloud translate",
-    "cloud logging", "cloud monitoring", "cloud trace", "cloud profiler"
+    "cloud logging", "cloud monitoring", "cloud trace", "cloud profiler",
+    "stack driver"
   ],
   "azure": [
     "azure functions", "blob storage", "cosmosdb", "azure sql",
@@ -27,7 +28,8 @@
     "azure logic apps", "azure monitor", "application insights",
     "azure key vault", "azure ad", "azure container instances", 
     "azure batch", "azure hdinsight", "azure redis cache", 
-    "table storage", "queue storage", "azure boards"
+    "table storage", "queue storage", "azure boards", 
+    "data lake storage", "bicep"
   ],
   "ibm": [
     "ibm cloud", "ibm watson", "watson", "cloud foundry",
