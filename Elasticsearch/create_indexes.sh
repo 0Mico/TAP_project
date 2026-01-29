@@ -3,7 +3,7 @@
 create_index_if_not_exists() {
   INDEX_NAME=$1
   MAPPING=$2
-  
+  # If curl return a 404 the index passed does not exist.
   if curl -s -o /dev/null -w "%{http_code}" "http://elasticsearch:9200/$INDEX_NAME" | grep -q "404"; then
     echo "Creating index: $INDEX_NAME"
     curl -X PUT "http://elasticsearch:9200/$INDEX_NAME" \

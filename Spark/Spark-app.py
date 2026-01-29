@@ -110,7 +110,7 @@ class SkillsExtractor:
             return final_skills
         
         except Exception as e:
-            print(f"Error extrcting skills: {e}")            
+            print(f"Error extracting skills: {e}")            
             return {
                 'raw_skills': [],
                 'categories': SkillCategorizer._get_empty_categories(),
@@ -209,7 +209,6 @@ def main():
     print(f"  Elasticsearch: {elasticsearch_host}:{elasticsearch_port}")
     print(f"  Kafka Topic: deduped_job_posts")
     print(f"  Elasticsearch Index: job_posts_with_skills")
-    print("="*60 + "\n")
     
     spark = create_spark_session()
     
@@ -225,7 +224,9 @@ def main():
     print("Connecting to Kafka...")
     kafka_df = connect_to_kafka(spark, kafka_bootstrap_servers)
     print("✓ Connected to Kafka\n")
-    
+
+    # The "value" column contains the actual message payloads in binary
+    # After give structure to the "value" column, select only this column and ignore the others
     print("Processing job posts...")
     parsed_df = kafka_df \
         .select(from_json(col("value").cast("string"), kafka_messages_schema).alias("data")) \
